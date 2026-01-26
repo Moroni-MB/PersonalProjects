@@ -1,16 +1,7 @@
-# testapp
+# iTravel
 
-A new Flutter project.
+This is my first mobile app which helps as a travel planning tool.
 
-## Getting Started
+## Project Description
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+As my fiance and I started planning our honeymoon I realized how much planning was required and how there were not a lot of apps out there that would efficiently help with that process. That is how the idea of iTravel came to mind. iTravel helps you create an itinerary of your travel plans so that you can have all your plans in one place.
