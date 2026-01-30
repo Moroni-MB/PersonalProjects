@@ -1,10 +1,21 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'models/trip.dart';
+import 'firebase_options.dart';
 import 'package:provider/provider.dart';
+import 'dart:async';
 
-// Entry point
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   runApp(const MyApp());
 }
+
+// Entry point
+// void main() {
+//   runApp(const MyApp());
+// }
 
 // Root widget
 class MyApp extends StatelessWidget {
@@ -26,21 +37,42 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// App-wide state (empty for now)
 class MyAppState extends ChangeNotifier {
-  // List of trips stored globally in the Trip class to store images
   final List<Trip> trips = [];
+  late StreamSubscription tripsSubscription;
 
-  // Function to add a new trip
-  void addTrip(String destination, String note) {
-    trips.add(Trip(destination: destination, notes: note, imgPath: "assets/travel_plane.webp"));
-    notifyListeners(); // Tells widgets to rebuild
+  // Firestore reference
+  final CollectionReference tripsRef = FirebaseFirestore.instance.collection(
+    'trips',
+  );
+
+  // Add a new trip to Firestore
+  Future<void> addTrip(String destination, String notes) async {
+    final docRef = await tripsRef.add({
+      'destination': destination,
+      'notes': notes,
+      'createdAt': Timestamp.now(),
+    });
   }
 
-  // Function to delete a trip
-  void removeTrip(int index) {
-    trips.removeAt(index);
-    notifyListeners(); // Rebuild the list
+  // Remove a trip from Firestore
+  Future<void> removeTrip(int index) async {
+    final trip = trips[index];
+    await tripsRef.doc(trip.id).delete();
+  }
+
+  void listenToTrips() {
+    tripsSubscription = tripsRef.orderBy('createdAt').snapshots().listen((snapshot) {
+      trips.clear();
+      for (var doc in snapshot.docs) {
+        trips.add(Trip.fromMap(doc.id, doc.data() as Map<String, dynamic>));
+      }
+      notifyListeners();
+    });
+  }
+
+  void cancelTripsListener() {
+    tripsSubscription.cancel();
   }
 }
 
@@ -117,39 +149,30 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final TextEditingController _controller = TextEditingController();
-  final TextEditingController _notescontroller = TextEditingController();
+  final TextEditingController _notesController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-    // Watch trip list
-    final appState = context.watch<MyAppState>();
+    final tripsRef = FirebaseFirestore.instance.collection('trips');
+    final defaultImg = "assets/travel_plane.webp";
 
-    // Uses SafeArea to prevent the pages from being cropped by cameras
     return SafeArea(
       child: Padding(
         padding: const EdgeInsets.all(16.0),
         child: Column(
           children: [
-            // Title for the home page
             const Text(
               'iTravel',
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-              ),
+              style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 8),
-      
-            // Subtitle for the page
             const Text(
               'Add a destination and plan your trips',
-              style: TextStyle(
-                fontSize: 16,
-              ),
+              style: TextStyle(fontSize: 16),
             ),
-      
             const SizedBox(height: 20),
-            // Input field
+
+            // Input fields
             TextField(
               controller: _controller,
               decoration: const InputDecoration(
@@ -158,71 +181,83 @@ class _HomePageState extends State<HomePage> {
               ),
             ),
             const SizedBox(height: 10),
-      
             TextField(
-              controller: _notescontroller,
+              controller: _notesController,
               decoration: const InputDecoration(
                 labelText: 'Notes (optional)',
                 border: OutlineInputBorder(),
               ),
             ),
             const SizedBox(height: 10),
-      
-            // Submit button
+
+            // Add Trip button
             ElevatedButton(
-              onPressed: () {
+              onPressed: () async {
                 if (_controller.text.isNotEmpty) {
-                  appState.addTrip(_controller.text, _notescontroller.text);
+                  await tripsRef.add({
+                    'destination': _controller.text,
+                    'notes': _notesController.text,
+                    'createdAt': Timestamp.now(),
+                  });
                   _controller.clear();
+                  _notesController.clear();
                 }
               },
               child: const Text('Add Trip'),
             ),
-      
+
             const SizedBox(height: 20),
-      
-            // Display trips or empty message
+
+            // Display trips using StreamBuilder
             Expanded(
-              child:
-                  appState
-                      .trips
-                      .isEmpty // If the list is empty show ? first
-                  ? const Center(
-                      child: Text(
-                        'No trips yet!',
-                        style: TextStyle(fontSize: 18),
-                      ),
-                    )
-                  // Else
-                  : ListView.builder(
-                      itemCount: appState.trips.length,
-                      itemBuilder: (context, index) {
-                        return Card(
-                          margin: const EdgeInsets.symmetric(vertical: 5),
-                          child: ListTile(
-                            leading: ClipRRect(
-                              borderRadius: BorderRadius.circular(8),
-                              child: Image.asset(
-                                appState.trips[index].imgPath,
-                                width: 60,
-                                height: 60,
-                                fit: BoxFit.cover,
-                              ),
-                            ),
-                            title: Text(appState.trips[index].destination),
-                            subtitle: Text(appState.trips[index].notes),
-                            trailing: IconButton(
-                              icon: const Icon(Icons.delete),
-                              onPressed: () {
-                                appState.removeTrip(index);
-                              },
+              child: StreamBuilder<QuerySnapshot>(
+                stream: tripsRef.orderBy('createdAt').snapshots(),
+                builder: (context, snapshot) {
+                  if (!snapshot.hasData) {
+                    return const Center(child: CircularProgressIndicator());
+                  }
+
+                  final docs = snapshot.data!.docs;
+
+                  if (docs.isEmpty) {
+                    return const Center(
+                      child: Text('No trips yet!', style: TextStyle(fontSize: 18)),
+                    );
+                  }
+
+                  return ListView.builder(
+                    itemCount: docs.length,
+                    itemBuilder: (context, index) {
+                      final doc = docs[index];
+                      final trip = Trip.fromMap(doc.id, doc.data() as Map<String, dynamic>);
+
+                      return Card(
+                        margin: const EdgeInsets.symmetric(vertical: 5),
+                        child: ListTile(
+                          leading: ClipRRect(
+                            borderRadius: BorderRadius.circular(8),
+                            child: Image.asset(
+                              defaultImg,
+                              width: 60,
+                              height: 60,
+                              fit: BoxFit.cover,
                             ),
                           ),
-                        );
-                      },
-                    ),
+                          title: Text(trip.destination),
+                          subtitle: Text(trip.notes),
+                          trailing: IconButton(
+                            icon: const Icon(Icons.delete),
+                            onPressed: () async {
+                              await tripsRef.doc(trip.id).delete();
+                            },
+                          ),
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
             ),
-            
           ],
         ),
       ),
@@ -232,48 +267,65 @@ class _HomePageState extends State<HomePage> {
   @override
   void dispose() {
     _controller.dispose();
+    _notesController.dispose();
     super.dispose();
   }
 }
+
 
 class TripsPage extends StatelessWidget {
   const TripsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    final appState = context.watch<MyAppState>();
+    final tripsRef = FirebaseFirestore.instance.collection('trips');
 
     return Padding(
       padding: const EdgeInsets.all(16.0),
-      child: appState.trips.isEmpty
-          ? const Center(
-              child: Text(
-                'No trips added yet!',
-                style: TextStyle(fontSize: 18),
-              ),
-            )
-          : ListView.builder(
-              itemCount: appState.trips.length,
-              itemBuilder: (context, index) {
-                return ListTile(
-                  leading: const Icon(Icons.flight),
-                  title: Text(appState.trips[index].destination),
-                );
-              },
-            ),
+      child: StreamBuilder<QuerySnapshot>(
+        stream: tripsRef.orderBy('createdAt').snapshots(),
+        builder: (context, snapshot) {
+          if (!snapshot.hasData) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          final docs = snapshot.data!.docs;
+
+          if (docs.isEmpty) {
+            return const Center(
+              child: Text('No trips added yet!', style: TextStyle(fontSize: 18)),
+            );
+          }
+
+          return ListView.builder(
+            itemCount: docs.length,
+            itemBuilder: (context, index) {
+              final doc = docs[index];
+              final trip = Trip.fromMap(doc.id, doc.data() as Map<String, dynamic>);
+
+              return ListTile(
+                leading: const Icon(Icons.flight),
+                title: Text(trip.destination),
+                subtitle: Text(trip.notes),
+              );
+            },
+          );
+        },
+      ),
     );
   }
 }
 
 
-class Trip {
-  final String destination;
-  final String notes;
-  final String imgPath;
 
-  Trip({
-    required this.destination,
-    required this.notes,
-    required this.imgPath,
-  });
-}
+// class Trip {
+//   final String destination;
+//   final String notes;
+//   final String imgPath;
+
+//   Trip({
+//     required this.destination,
+//     required this.notes,
+//     required this.imgPath,
+//   });
+// }
