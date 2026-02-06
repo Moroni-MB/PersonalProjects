@@ -10,13 +10,9 @@ import 'package:firebase_auth/firebase_auth.dart' as fb_auth;
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  FirebaseUIAuth.configureProviders([
-    EmailAuthProvider(),
-  ]);
+  FirebaseUIAuth.configureProviders([EmailAuthProvider()]);
 
   runApp(const MyApp());
 }
@@ -80,10 +76,15 @@ class MyAppState extends ChangeNotifier {
 
   // Add a new trip to Firestore
   Future<void> addTrip(String destination, String notes) async {
-    final docRef = await tripsRef.add({
+    final user = fb_auth.FirebaseAuth.instance.currentUser;
+
+    if (user == null) return;
+
+    await tripsRef.add({
       'destination': destination,
       'notes': notes,
       'createdAt': Timestamp.now(),
+      'uid': user.uid, // 🔐 ownership
     });
   }
 
@@ -94,7 +95,9 @@ class MyAppState extends ChangeNotifier {
   }
 
   void listenToTrips() {
-    tripsSubscription = tripsRef.orderBy('createdAt').snapshots().listen((snapshot) {
+    tripsSubscription = tripsRef.orderBy('createdAt').snapshots().listen((
+      snapshot,
+    ) {
       trips.clear();
       for (var doc in snapshot.docs) {
         trips.add(Trip.fromMap(doc.id, doc.data() as Map<String, dynamic>));
@@ -237,15 +240,19 @@ class _HomePageState extends State<HomePage> {
             // Add Trip button
             ElevatedButton(
               onPressed: () async {
-                if (_controller.text.isNotEmpty) {
-                  await tripsRef.add({
-                    'destination': _controller.text,
-                    'notes': _notesController.text,
-                    'createdAt': Timestamp.now(),
-                  });
-                  _controller.clear();
-                  _notesController.clear();
-                }
+                final user = fb_auth.FirebaseAuth.instance.currentUser;
+                if (user == null) return;
+                if (_controller.text.trim().isEmpty) return;
+
+                await tripsRef.add({
+                  'destination': _controller.text,
+                  'notes': _notesController.text,
+                  'createdAt': Timestamp.now(),
+                  'uid': user.uid,
+                });
+
+                _controller.clear();
+                _notesController.clear();
               },
               child: const Text('Add Trip'),
             ),
@@ -254,48 +261,71 @@ class _HomePageState extends State<HomePage> {
 
             // Display trips using StreamBuilder
             Expanded(
-              child: StreamBuilder<QuerySnapshot>(
-                stream: tripsRef.orderBy('createdAt').snapshots(),
-                builder: (context, snapshot) {
-                  if (!snapshot.hasData) {
-                    return const Center(child: CircularProgressIndicator());
+              child: Builder(
+                builder: (context) {
+                  final user = fb_auth.FirebaseAuth.instance.currentUser;
+
+                  if (user == null) {
+                    return const Center(child: Text('Not signed in'));
                   }
 
-                  final docs = snapshot.data!.docs;
+                  return StreamBuilder<QuerySnapshot>(
+                    stream: tripsRef
+                        .where('uid', isEqualTo: user.uid)
+                        .orderBy('createdAt')
+                        .snapshots(),
+                    builder: (context, snapshot) {
+                      if (snapshot.hasError) {
+                        return Center(child: Text('Error: ${snapshot.error}'));
+                      }
 
-                  if (docs.isEmpty) {
-                    return const Center(
-                      child: Text('No trips yet!', style: TextStyle(fontSize: 18)),
-                    );
-                  }
+                      if (snapshot.connectionState == ConnectionState.waiting) {
+                        return const Center(child: CircularProgressIndicator());
+                      }
 
-                  return ListView.builder(
-                    itemCount: docs.length,
-                    itemBuilder: (context, index) {
-                      final doc = docs[index];
-                      final trip = Trip.fromMap(doc.id, doc.data() as Map<String, dynamic>);
+                      final docs = snapshot.data!.docs;
 
-                      return Card(
-                        margin: const EdgeInsets.symmetric(vertical: 5),
-                        child: ListTile(
-                          leading: ClipRRect(
-                            borderRadius: BorderRadius.circular(8),
-                            child: Image.asset(
-                              defaultImg,
-                              width: 60,
-                              height: 60,
-                              fit: BoxFit.cover,
+                      if (docs.isEmpty) {
+                        return const Center(
+                          child: Text(
+                            'No trips yet!',
+                            style: TextStyle(fontSize: 18),
+                          ),
+                        );
+                      }
+
+                      return ListView.builder(
+                        itemCount: docs.length,
+                        itemBuilder: (context, index) {
+                          final doc = docs[index];
+                          final trip = Trip.fromMap(
+                            doc.id,
+                            doc.data() as Map<String, dynamic>,
+                          );
+
+                          return Card(
+                            margin: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
+                            child: ListTile(
+                              leading: ClipRRect(
+                                borderRadius: BorderRadius.circular(8),
+                                child: Image.asset(
+                                  defaultImg,
+                                  width: 50,
+                                  height: 50,
+                                  fit: BoxFit.cover,
+                                ),
+                              ),
+                              title: Text(trip.destination),
+                              subtitle: Text(trip.notes),
+                              trailing: IconButton(
+                                icon: const Icon(Icons.delete, color: Colors.red),
+                                onPressed: () {
+                                  tripsRef.doc(doc.id).delete();
+                                },
+                              ),
                             ),
-                          ),
-                          title: Text(trip.destination),
-                          subtitle: Text(trip.notes),
-                          trailing: IconButton(
-                            icon: const Icon(Icons.delete),
-                            onPressed: () async {
-                              await tripsRef.doc(trip.id).delete();
-                            },
-                          ),
-                        ),
+                          );
+                        },
                       );
                     },
                   );
@@ -316,18 +346,26 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-
 class TripsPage extends StatelessWidget {
   const TripsPage({super.key});
 
   @override
   Widget build(BuildContext context) {
     final tripsRef = FirebaseFirestore.instance.collection('trips');
+    final user = fb_auth.FirebaseAuth.instance.currentUser;
+
+    // 🚫 Safety check (should never happen because of AuthGate, but good practice)
+    if (user == null) {
+      return const Center(child: Text('Not signed in'));
+    }
 
     return Padding(
       padding: const EdgeInsets.all(16.0),
       child: StreamBuilder<QuerySnapshot>(
-        stream: tripsRef.orderBy('createdAt').snapshots(),
+        stream: tripsRef
+            .where('uid', isEqualTo: user.uid)
+            .orderBy('createdAt')
+            .snapshots(),
         builder: (context, snapshot) {
           if (!snapshot.hasData) {
             return const Center(child: CircularProgressIndicator());
@@ -337,7 +375,10 @@ class TripsPage extends StatelessWidget {
 
           if (docs.isEmpty) {
             return const Center(
-              child: Text('No trips added yet!', style: TextStyle(fontSize: 18)),
+              child: Text(
+                'No trips added yet!',
+                style: TextStyle(fontSize: 18),
+              ),
             );
           }
 
@@ -345,7 +386,10 @@ class TripsPage extends StatelessWidget {
             itemCount: docs.length,
             itemBuilder: (context, index) {
               final doc = docs[index];
-              final trip = Trip.fromMap(doc.id, doc.data() as Map<String, dynamic>);
+              final trip = Trip.fromMap(
+                doc.id,
+                doc.data() as Map<String, dynamic>,
+              );
 
               return ListTile(
                 leading: const Icon(Icons.flight),
@@ -359,6 +403,7 @@ class TripsPage extends StatelessWidget {
     );
   }
 }
+
 
 
 
