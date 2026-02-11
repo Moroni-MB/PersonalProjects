@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'category_section.dart';
 
 // Entry point
 void main() {
@@ -90,25 +91,31 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.all(16),
+      child: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Page title
-            const Text(
-              'Adulting App',
-              style: TextStyle(
-                fontSize: 26,
-                fontWeight: FontWeight.bold,
-              ),
-            ),
             const SizedBox(height: 16),
 
-            // Horizontal scroll section
+            // Page title
+            const Padding(
+              padding: EdgeInsets.symmetric(horizontal: 20),
+              child: Text(
+                'Adulting App',
+                style: TextStyle(
+                  fontSize: 26,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+            ),
+
+            const SizedBox(height: 20),
+
+            // 🔹 Horizontal Skills Section
             SizedBox(
               height: 200,
               child: ListView(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
                 scrollDirection: Axis.horizontal,
                 physics: const BouncingScrollPhysics(),
                 children: const [
@@ -119,12 +126,56 @@ class HomePage extends StatelessWidget {
                 ],
               ),
             ),
+
+            const SizedBox(height: 30),
+
+            // 🔹 Category Sections (Team Code)
+            CategorySection(
+              title: "Cooking",
+              titleColor: Colors.orange,
+              lessons: [
+                LessonItem(
+                  title: "Boil Pasta",
+                  description: "Learn how to properly boil pasta.",
+                  difficulty: "Easy",
+                  duration: "5 min",
+                ),
+                LessonItem(
+                  title: "Cook Chicken",
+                  description: "Safely cook chicken on stovetop.",
+                  difficulty: "Medium",
+                  duration: "10 min",
+                ),
+              ],
+            ),
+
+            CategorySection(
+              title: "Budgeting",
+              titleColor: Colors.green,
+              lessons: [
+                LessonItem(
+                  title: "Track Expenses",
+                  description: "Learn to track your daily expenses.",
+                  difficulty: "Easy",
+                  duration: "4 min",
+                ),
+                LessonItem(
+                  title: "Create a Budget Plan",
+                  description: "Build your first monthly budget.",
+                  difficulty: "Medium",
+                  duration: "8 min",
+                ),
+              ],
+            ),
+
+            const SizedBox(height: 40),
           ],
         ),
       ),
     );
   }
 }
+
 
 class CompletedPage extends StatelessWidget {
   const CompletedPage({super.key});

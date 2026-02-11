@@ -1,0 +1,860 @@
+{
+  "lessons": [
+    {
+      "title": "Cleaning and Organizing",
+      "difficulty": "Easy → Hard",
+      "category": "Housekeeping",
+      "questions": [
+        {
+          "question": "Which surface should you clean first in a kitchen?",
+          "options": {
+            "a": "Floors",
+            "b": "Countertops",
+            "c": "Ceiling",
+            "d": "Windows"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which cleaning tool is best for dusting shelves?",
+          "options": {
+            "a": "Mop",
+            "b": "Feather duster",
+            "c": "Vacuum cleaner",
+            "d": "Sponge"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "When organizing a drawer, what's a good first step?",
+          "options": {
+            "a": "Put everything back randomly",
+            "b": "Take everything out and sort items",
+            "c": "Buy new items",
+            "d": "Leave it as it is"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which of the following is safest to use on most furniture surfaces?",
+          "options": {
+            "a": "Bleach",
+            "b": "Mild soap and water",
+            "c": "Oven cleaner",
+            "d": "Sandpaper"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "How often should you make your bed?",
+          "options": {
+            "a": "Once a week",
+            "b": "Every morning",
+            "c": "Once a month",
+            "d": "Never"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is the proper order for cleaning a room?",
+          "options": {
+            "a": "Dust → Vacuum → Mop",
+            "b": "Mop → Vacuum → Dust",
+            "c": "Vacuum → Dust → Mop",
+            "d": "Mop → Dust → Vacuum"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "To reduce clutter, which method is effective?",
+          "options": {
+            "a": "Keep all items",
+            "b": "Donate or discard unused items",
+            "c": "Hide them in drawers",
+            "d": "Stack everything in corners"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "A 'caddy' in cleaning refers to:",
+          "options": {
+            "a": "A type of vacuum",
+            "b": "A container for cleaning supplies",
+            "c": "A mop handle",
+            "d": "A laundry basket"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is the best place to store frequently used cleaning tools?",
+          "options": {
+            "a": "High shelf",
+            "b": "Laundry room",
+            "c": "Easily accessible spot",
+            "d": "Garage"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is the main reason to separate laundry by color?",
+          "options": {
+            "a": "To save water",
+            "b": "To avoid color bleeding",
+            "c": "To make it heavier",
+            "d": "To make washing faster"
+          },
+          "answer": "b"
+        }
+      ]
+    },
+    {
+      "title": "Laundry Care",
+      "difficulty": "Easy → Hard",
+      "category": "Housekeeping",
+      "questions": [
+        {
+          "question": "Which symbol indicates machine wash on a clothing label?",
+          "options": {
+            "a": "Triangle",
+            "b": "Circle",
+            "c": "Square with a circle inside",
+            "d": "Bucket with water"
+          },
+          "answer": "d"
+        },
+        {
+          "question": "Why should you check pockets before washing clothes?",
+          "options": {
+            "a": "To find money",
+            "b": "To avoid washing small items that can damage the machine",
+            "c": "To see what's inside",
+            "d": "To make laundry smell better"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which fabric is typically safest for high-temperature drying?",
+          "options": {
+            "a": "Cotton",
+            "b": "Wool",
+            "c": "Silk",
+            "d": "Linen"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "How can you prevent colors from fading in laundry?",
+          "options": {
+            "a": "Wash in hot water every time",
+            "b": "Use color-safe detergent and cold water",
+            "c": "Dry in direct sunlight",
+            "d": "Shake clothes before washing"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Why should delicate fabrics be washed separately?",
+          "options": {
+            "a": "They dry slower",
+            "b": "They can get damaged by rough fabrics",
+            "c": "They smell better",
+            "d": "They are heavier"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is a recommended method for removing stains from clothing?",
+          "options": {
+            "a": "Rub with soap immediately and rinse",
+            "b": "Wash immediately in hot water",
+            "c": "Iron over the stain",
+            "d": "Ignore it until next laundry"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Why should you turn printed T-shirts inside out before washing?",
+          "options": {
+            "a": "To make them look cleaner",
+            "b": "To prevent the print from cracking or fading",
+            "c": "To save detergent",
+            "d": "To dry faster"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What does the 'hand wash only' label indicate?",
+          "options": {
+            "a": "Machine wash is okay",
+            "b": "Use only hands, no machines",
+            "c": "Only soak for 5 minutes",
+            "d": "Use bleach"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "How often should towels be washed?",
+          "options": {
+            "a": "Once a week",
+            "b": "Once a month",
+            "c": "Every day",
+            "d": "Never"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Which laundry product helps soften clothes?",
+          "options": {
+            "a": "Fabric softener",
+            "b": "Bleach",
+            "c": "Detergent booster",
+            "d": "Dish soap"
+          },
+          "answer": "a"
+        }
+      ]
+    },
+    {
+      "title": "Kitchen Hygiene",
+      "difficulty": "Easy → Hard",
+      "category": "Housekeeping",
+      "questions": [
+        {
+          "question": "Which utensil should never be used on a nonstick pan?",
+          "options": {
+            "a": "Wooden spoon",
+            "b": "Silicone spatula",
+            "c": "Metal fork",
+            "d": "Rubber spatula"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "How should you store raw meat in the refrigerator?",
+          "options": {
+            "a": "On the top shelf",
+            "b": "On the bottom shelf",
+            "c": "Next to cooked food",
+            "d": "Anywhere"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Why should you wipe spills immediately?",
+          "options": {
+            "a": "To make the floor shiny",
+            "b": "To prevent slips and bacteria growth",
+            "c": "To save cleaning products",
+            "d": "To make cooking faster"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is the safest way to thaw frozen meat?",
+          "options": {
+            "a": "Leave it on the counter",
+            "b": "In the refrigerator",
+            "c": "In hot water",
+            "d": "In sunlight"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is the best way to clean a cutting board after chopping raw meat?",
+          "options": {
+            "a": "Wash with soap and hot water",
+            "b": "Rinse with cold water",
+            "c": "Wipe with a paper towel",
+            "d": "Soak in water for a week"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Why shouldn't you mix cleaning chemicals like bleach and ammonia?",
+          "options": {
+            "a": "It creates bubbles",
+            "b": "It can release toxic gases",
+            "c": "It makes them less effective",
+            "d": "It smells better"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which kitchen item is safest to clean in a dishwasher?",
+          "options": {
+            "a": "Wooden spoon",
+            "b": "Stainless steel pan",
+            "c": "Knife with wooden handle",
+            "d": "Nonstick pan"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "How should you store leftover cooked food?",
+          "options": {
+            "a": "At room temperature",
+            "b": "In airtight containers in the fridge",
+            "c": "In a paper bag",
+            "d": "Covered loosely on the counter"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is the main reason to regularly clean the fridge?",
+          "options": {
+            "a": "To organize shelves",
+            "b": "To remove old food and prevent bacteria growth",
+            "c": "To make it smell good",
+            "d": "To make it look new"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "How can cross-contamination be avoided?",
+          "options": {
+            "a": "Wash hands and utensils between handling raw and cooked food",
+            "b": "Use the same knife for everything",
+            "c": "Leave food uncovered",
+            "d": "Store all food together"
+          },
+          "answer": "a"
+        }
+      ]
+    },
+    {
+      "title": "What Is Time Management?",
+      "difficulty": "Easy",
+      "category": "Time Management",
+      "questions": [
+        {
+          "question": "What does \"time management\" mean?",
+          "options": {
+            "a": "Doing everything at once",
+            "b": "Planning how to use your time effectively",
+            "c": "Working nonstop",
+            "d": "Avoiding responsibilities"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is an example of good time management?",
+          "options": {
+            "a": "Ignoring deadlines",
+            "b": "Doing tasks randomly",
+            "c": "Making a to-do list",
+            "d": "Waiting until the last minute"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Why is time management important?",
+          "options": {
+            "a": "It makes time go faster",
+            "b": "It reduces stress and missed deadlines",
+            "c": "It eliminates work",
+            "d": "It gives you more hours in a day"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which tool helps you remember tasks?",
+          "options": {
+            "a": "A calendar",
+            "b": "A video game",
+            "c": "A TV show",
+            "d": "A random note in your head"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "What happens when time is poorly managed?",
+          "options": {
+            "a": "More free time",
+            "b": "Less stress",
+            "c": "Missed deadlines and stress",
+            "d": "Better sleep"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which task should usually be done first?",
+          "options": {
+            "a": "The easiest",
+            "b": "The most urgent or important",
+            "c": "The most fun",
+            "d": "The longest"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Time management helps you balance:",
+          "options": {
+            "a": "Sleep, work, and free time",
+            "b": "Only work",
+            "c": "Only school",
+            "d": "Only fun"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Which is a daily responsibility for many adults?",
+          "options": {
+            "a": "Paying bills",
+            "b": "Going to work or school",
+            "c": "Household chores",
+            "d": "All of the above"
+          },
+          "answer": "d"
+        },
+        {
+          "question": "What is a \"deadline\"?",
+          "options": {
+            "a": "A suggestion",
+            "b": "The latest time a task must be completed",
+            "c": "A reward",
+            "d": "A break"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Good time management mostly depends on:",
+          "options": {
+            "a": "Luck",
+            "b": "Other people",
+            "c": "Your choices and planning",
+            "d": "Technology alone"
+          },
+          "answer": "c"
+        }
+      ]
+    },
+    {
+      "title": "Planning Your Day",
+      "difficulty": "Easy",
+      "category": "Time Management",
+      "questions": [
+        {
+          "question": "What is a to-do list used for?",
+          "options": {
+            "a": "Decoration",
+            "b": "Tracking completed tasks",
+            "c": "Planning what needs to be done",
+            "d": "Entertainment"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "When should you make a plan for your day?",
+          "options": {
+            "a": "After the day ends",
+            "b": "When you feel stressed",
+            "c": "At the start of the day or the night before",
+            "d": "Never"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which task should be written on a daily plan?",
+          "options": {
+            "a": "Guessing what might happen",
+            "b": "Required tasks and appointments",
+            "c": "Only fun activities",
+            "d": "Nothing important"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What helps prevent forgetting appointments?",
+          "options": {
+            "a": "Memory alone",
+            "b": "A calendar reminder",
+            "c": "Waiting",
+            "d": "Stress"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is an example of a routine?",
+          "options": {
+            "a": "Random tasks",
+            "b": "Doing things whenever",
+            "c": "A repeated daily habit like morning prep",
+            "d": "Avoiding schedules"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "How long should a daily plan be?",
+          "options": {
+            "a": "Extremely detailed",
+            "b": "Unrealistic",
+            "c": "Reasonable and achievable",
+            "d": "Empty"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is a benefit of planning your day?",
+          "options": {
+            "a": "Less flexibility",
+            "b": "More stress",
+            "c": "Better focus and productivity",
+            "d": "Less free time"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which tool is best for tracking deadlines?",
+          "options": {
+            "a": "Alarm clock",
+            "b": "Calendar app or planner",
+            "c": "Calculator",
+            "d": "Notes app only"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "If a task takes 30 minutes, what should you do?",
+          "options": {
+            "a": "Ignore it",
+            "b": "Guess the time",
+            "c": "Schedule about 30 minutes for it",
+            "d": "Schedule 5 minutes"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Planning helps you avoid:",
+          "options": {
+            "a": "Breaks",
+            "b": "Fun",
+            "c": "Overcommitting your time",
+            "d": "Goals"
+          },
+          "answer": "c"
+        }
+      ]
+    },
+    {
+      "title": "Priorities & Deadlines",
+      "difficulty": "Medium",
+      "category": "Time Management",
+      "questions": [
+        {
+          "question": "What does it mean to \"prioritize\"?",
+          "options": {
+            "a": "Do everything",
+            "b": "Choose what matters most first",
+            "c": "Avoid tasks",
+            "d": "Work slower"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which task should usually come first?",
+          "options": {
+            "a": "Due next week",
+            "b": "Due today and important",
+            "c": "Optional",
+            "d": "Fun"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "\"Urgent\" tasks are:",
+          "options": {
+            "a": "Optional",
+            "b": "Due soon",
+            "c": "Easy",
+            "d": "Fun"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "\"Important\" tasks are:",
+          "options": {
+            "a": "Stressful",
+            "b": "Long",
+            "c": "Necessary for goals or responsibilities",
+            "d": "Quick"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "If two tasks conflict, what should you do?",
+          "options": {
+            "a": "Ignore both",
+            "b": "Choose the more urgent or important one",
+            "c": "Panic",
+            "d": "Do neither"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What happens if you ignore priorities?",
+          "options": {
+            "a": "More productivity",
+            "b": "Missed deadlines and stress",
+            "c": "Better results",
+            "d": "More free time"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is a high-priority task?",
+          "options": {
+            "a": "Watching a show",
+            "b": "Homework due tonight",
+            "c": "Scrolling social media",
+            "d": "Cleaning for fun"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is a realistic workload?",
+          "options": {
+            "a": "Filling every minute",
+            "b": "Planning more than possible",
+            "c": "Planning what you can reasonably complete",
+            "d": "Doing nothing"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which tool helps with prioritization?",
+          "options": {
+            "a": "Random choice",
+            "b": "A priority list or ranking",
+            "c": "Ignoring deadlines",
+            "d": "Multitasking"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "A good priority system helps you:",
+          "options": {
+            "a": "Avoid work",
+            "b": "Meet deadlines and reduce stress",
+            "c": "Waste time",
+            "d": "Be perfect"
+          },
+          "answer": "b"
+        }
+      ]
+    },
+    {
+      "title": "Time Wasters & Focus",
+      "difficulty": "Medium",
+      "category": "Time Management",
+      "questions": [
+        {
+          "question": "What is a \"time waster\"?",
+          "options": {
+            "a": "A break",
+            "b": "Something that unintentionally consumes time",
+            "c": "A job",
+            "d": "A goal"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is a common time waster?",
+          "options": {
+            "a": "Planning",
+            "b": "Social media scrolling",
+            "c": "Studying",
+            "d": "Sleeping"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Multitasking often leads to:",
+          "options": {
+            "a": "Better focus",
+            "b": "Faster completion",
+            "c": "More mistakes and slower work",
+            "d": "Less stress"
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What helps improve focus?",
+          "options": {
+            "a": "Notifications on",
+            "b": "Quiet environment",
+            "c": "Constant interruptions",
+            "d": "Doing everything at once"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What should you do when distracted?",
+          "options": {
+            "a": "Quit the task",
+            "b": "Refocus and remove distractions",
+            "c": "Switch tasks endlessly",
+            "d": "Ignore it"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "A focused work session should be:",
+          "options": {
+            "a": "Endless",
+            "b": "Short with breaks (like 25–50 minutes)",
+            "c": "Random",
+            "d": "Only at night"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is a healthy break?",
+          "options": {
+            "a": "Endless scrolling",
+            "b": "Stretching or walking briefly",
+            "c": "Avoiding work forever",
+            "d": "Watching full episodes"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What happens when distractions increase?",
+          "options": {
+            "a": "Productivity improves",
+            "b": "Tasks take longer",
+            "c": "Focus increases",
+            "d": "Stress disappears"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Turning off notifications helps because it:",
+          "options": {
+            "a": "Makes you bored",
+            "b": "Reduces interruptions",
+            "c": "Wastes time",
+            "d": "Cancels tasks"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Managing focus helps you:",
+          "options": {
+            "a": "Work less",
+            "b": "Work more efficiently",
+            "c": "Avoid responsibility",
+            "d": "Skip deadlines"
+          },
+          "answer": "b"
+        }
+      ]
+    },
+    {
+      "title": "Balancing Life, Work, and Energy",
+      "difficulty": "Hard",
+      "category": "Time Management",
+      "questions": [
+        {
+          "question": "Why is energy management important?",
+          "options": {
+            "a": "Time doesn't matter",
+            "b": "Energy affects how well you work",
+            "c": "Sleep is optional",
+            "d": "Work should be nonstop"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "When should you schedule hard tasks?",
+          "options": {
+            "a": "When tired",
+            "b": "During high-energy times",
+            "c": "Late at night only",
+            "d": "Randomly"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What happens if you over-schedule yourself?",
+          "options": {
+            "a": "Higher quality work",
+            "b": "Burnout and stress",
+            "c": "More free time",
+            "d": "Better sleep"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "A balanced schedule includes:",
+          "options": {
+            "a": "Only work",
+            "b": "Work, rest, and personal time",
+            "c": "No breaks",
+            "d": "No flexibility"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is burnout?",
+          "options": {
+            "a": "Motivation boost",
+            "b": "Long-term exhaustion from stress",
+            "c": "Good productivity",
+            "d": "Free time"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which is a sign your schedule needs adjustment?",
+          "options": {
+            "a": "Feeling calm",
+            "b": "Constant exhaustion and missed tasks",
+            "c": "Having breaks",
+            "d": "Feeling balanced"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Why is flexibility important in time management?",
+          "options": {
+            "a": "Life is unpredictable",
+            "b": "Plans never change",
+            "c": "It reduces productivity",
+            "d": "It avoids responsibility"
+          },
+          "answer": "a"
+        },
+        {
+          "question": "What should you do when plans change?",
+          "options": {
+            "a": "Quit",
+            "b": "Adjust your schedule realistically",
+            "c": "Panic",
+            "d": "Ignore everything"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Long-term time management helps with:",
+          "options": {
+            "a": "Short-term stress only",
+            "b": "Life balance and goal achievement",
+            "c": "Avoiding work",
+            "d": "Eliminating effort"
+          },
+          "answer": "b"
+        },
+        {
+          "question": "The ultimate goal of time management is to:",
+          "options": {
+            "a": "Be busy",
+            "b": "Control every minute",
+            "c": "Live a balanced, productive life",
+            "d": "Work nonstop"
+          },
+          "answer": "c"
+        }
+      ]
+    }
+  ]
+}
