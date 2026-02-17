@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "690706550947",
+    "project_id": "adulting-app-d4225",
+    "storage_bucket": "adulting-app-d4225.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:690706550947:android:3efa26616675da0c2bef16",
+        "android_client_info": {
+          "package_name": "com.example.adultingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBWw6cgCIyoXQVpHnL2h6KuYDbQS4-d7rY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

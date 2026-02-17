@@ -1,9 +1,18 @@
+import 'package:adultingapp/auth_wrapper.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'category_section.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
 
 // Entry point
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
   runApp(const MyApp());
 }
 
@@ -21,7 +30,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         ),
-        home: const MyHomePage(),
+        home: const AuthWrapper(),
       ),
     );
   }
@@ -83,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 
-// -------- Empty Pages --------
+// -------- Pages --------
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -95,21 +104,62 @@ class HomePage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            const SizedBox(height: 16),
+            const SizedBox(height: 20),
 
-            // Page title
-            const Padding(
-              padding: EdgeInsets.symmetric(horizontal: 20),
-              child: Text(
-                'Adulting App',
-                style: TextStyle(
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        // App title
+                        'Adulting App',
+                        style: TextStyle(
+                          fontSize: 28,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 6),
+
+                      // Display the email being used
+                      Text(
+                        FirebaseAuth.instance.currentUser?.email ?? "",
+                        style: TextStyle(
+                          fontSize: 14,
+                          color: Colors.grey.shade600,
+                        ),
+                      ),
+                    ],
+                  ),
+
+                  // Logout button
+                  Container(
+                    decoration: BoxDecoration(
+                      color: Colors.red.shade50,
+                      borderRadius: BorderRadius.circular(12),
+                    ),
+                    child: IconButton(
+                      icon: const Icon(Icons.logout),
+                      color: Colors.red,
+                      tooltip: "Logout",
+                      onPressed: () async {
+                        await FirebaseAuth.instance.signOut();
+                      },
+                    ),
+                  ),
+                ],
               ),
             ),
 
+            const SizedBox(height: 30),
+
+
             const SizedBox(height: 20),
+            
 
             // 🔹 Horizontal Skills Section
             SizedBox(
