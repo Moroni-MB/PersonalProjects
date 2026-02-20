@@ -1,0 +1,175 @@
+/* Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  
+  body {
+    background: linear-gradient(135deg, #1f2937, #111827);
+    color: #f3f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Card Container */
+  .container {
+    background: #1e293b;
+    padding: 40px;
+    border-radius: 16px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  /* Form */
+  .form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  label {
+    margin-bottom: 8px;
+    font-size: 14px;
+    opacity: 0.8;
+  }
+  
+  input,
+  select {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background: #334155;
+    color: white;
+    font-size: 14px;
+  }
+  
+  input:focus,
+  select:focus {
+    outline: 2px solid #3b82f6;
+  }
+  
+  /* Button */
+  button {
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    background: #3b82f6;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    margin-top: 10px;
+  }
+  
+  button:hover {
+    background: #2563eb;
+    transform: translateY(-1px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Output */
+  pre {
+    margin-top: 25px;
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.4;
+  }
+
+  #output {
+    margin-top: 25px;
+  }
+  
+  #output h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #3b82f6;
+  }
+  
+  .day-card {
+    background: #0f172a;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .day-card h3 {
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 5px;
+  }
+  
+  .day-card ul {
+    list-style: none;
+  }
+  
+  .day-card li {
+    padding: 6px 0;
+    font-size: 14px;
+  }
+
+  /* Muscle group labels */
+.muscle {
+  font-size: 11px;
+  font-weight: 600;
+  padding: 2px 6px;
+  border-radius: 6px;
+  margin-left: 8px;
+  color: white;
+}
+
+/* Color coding by muscle group */
+.chest {
+  background-color: #ef4444; /* red */
+}
+
+.back {
+  background-color: #3b82f6; /* blue */
+}
+
+.legs {
+  background-color: #10b981; /* green */
+}
+
+.shoulders {
+  background-color: #f59e0b; /* orange */
+}
+
+.arms {
+  background-color: #8b5cf6; /* purple */
+}
+
+.core {
+  background-color: #f43f5e; /* pink */
+}
+
+.upper-back {
+  background-color: #6366f1; /* indigo */
+}
+
+/* fallback if no match */
+.muscle:not([class*="-"]) {
+  background-color: #6b7280; /* gray */
+}

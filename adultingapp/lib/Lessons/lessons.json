@@ -8,100 +8,220 @@
         {
           "question": "Which surface should you clean first in a kitchen?",
           "options": {
-            "a": "Floors",
-            "b": "Countertops",
-            "c": "Ceiling",
-            "d": "Windows"
+            "a": {
+              "emoji": "🧹",
+              "text": "Floors"
+            },
+            "b": {
+              "emoji": "🍽️",
+              "text": "Countertops"
+            },
+            "c": {
+              "emoji": "⬆️",
+              "text": "Ceiling"
+            },
+            "d": {
+              "emoji": "🪟",
+              "text": "Windows"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which cleaning tool is best for dusting shelves?",
           "options": {
-            "a": "Mop",
-            "b": "Feather duster",
-            "c": "Vacuum cleaner",
-            "d": "Sponge"
+            "a": {
+              "emoji": "🪣",
+              "text": "Mop"
+            },
+            "b": {
+              "emoji": "🪶",
+              "text": "Feather duster"
+            },
+            "c": {
+              "emoji": "🧽",
+              "text": "Vacuum cleaner"
+            },
+            "d": {
+              "emoji": "🧼",
+              "text": "Sponge"
+            }
           },
           "answer": "b"
         },
         {
           "question": "When organizing a drawer, what's a good first step?",
           "options": {
-            "a": "Put everything back randomly",
-            "b": "Take everything out and sort items",
-            "c": "Buy new items",
-            "d": "Leave it as it is"
+            "a": {
+              "emoji": "🔀",
+              "text": "Put everything back randomly"
+            },
+            "b": {
+              "emoji": "📦",
+              "text": "Take everything out and sort items"
+            },
+            "c": {
+              "emoji": "🛒",
+              "text": "Buy new items"
+            },
+            "d": {
+              "emoji": "😴",
+              "text": "Leave it as it is"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which of the following is safest to use on most furniture surfaces?",
           "options": {
-            "a": "Bleach",
-            "b": "Mild soap and water",
-            "c": "Oven cleaner",
-            "d": "Sandpaper"
+            "a": {
+              "emoji": "🧪",
+              "text": "Bleach"
+            },
+            "b": {
+              "emoji": "🧴",
+              "text": "Mild soap and water"
+            },
+            "c": {
+              "emoji": "🔥",
+              "text": "Oven cleaner"
+            },
+            "d": {
+              "emoji": "🪨",
+              "text": "Sandpaper"
+            }
           },
           "answer": "b"
         },
         {
           "question": "How often should you make your bed?",
           "options": {
-            "a": "Once a week",
-            "b": "Every morning",
-            "c": "Once a month",
-            "d": "Never"
+            "a": {
+              "emoji": "📅",
+              "text": "Once a week"
+            },
+            "b": {
+              "emoji": "☀️",
+              "text": "Every morning"
+            },
+            "c": {
+              "emoji": "🗓️",
+              "text": "Once a month"
+            },
+            "d": {
+              "emoji": "🙅",
+              "text": "Never"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is the proper order for cleaning a room?",
           "options": {
-            "a": "Dust → Vacuum → Mop",
-            "b": "Mop → Vacuum → Dust",
-            "c": "Vacuum → Dust → Mop",
-            "d": "Mop → Dust → Vacuum"
+            "a": {
+              "emoji": "🧹",
+              "text": "Dust → Vacuum → Mop"
+            },
+            "b": {
+              "emoji": "🔄",
+              "text": "Mop → Vacuum → Dust"
+            },
+            "c": {
+              "emoji": "🌀",
+              "text": "Vacuum → Dust → Mop"
+            },
+            "d": {
+              "emoji": "↩️",
+              "text": "Mop → Dust → Vacuum"
+            }
           },
           "answer": "a"
         },
         {
           "question": "To reduce clutter, which method is effective?",
           "options": {
-            "a": "Keep all items",
-            "b": "Donate or discard unused items",
-            "c": "Hide them in drawers",
-            "d": "Stack everything in corners"
+            "a": {
+              "emoji": "📦",
+              "text": "Keep all items"
+            },
+            "b": {
+              "emoji": "♻️",
+              "text": "Donate or discard unused items"
+            },
+            "c": {
+              "emoji": "🗄️",
+              "text": "Hide them in drawers"
+            },
+            "d": {
+              "emoji": "📚",
+              "text": "Stack everything in corners"
+            }
           },
           "answer": "b"
         },
         {
           "question": "A 'caddy' in cleaning refers to:",
           "options": {
-            "a": "A type of vacuum",
-            "b": "A container for cleaning supplies",
-            "c": "A mop handle",
-            "d": "A laundry basket"
+            "a": {
+              "emoji": "🧽",
+              "text": "A type of vacuum"
+            },
+            "b": {
+              "emoji": "🧺",
+              "text": "A container for cleaning supplies"
+            },
+            "c": {
+              "emoji": "🪣",
+              "text": "A mop handle"
+            },
+            "d": {
+              "emoji": "👗",
+              "text": "A laundry basket"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is the best place to store frequently used cleaning tools?",
           "options": {
-            "a": "High shelf",
-            "b": "Laundry room",
-            "c": "Easily accessible spot",
-            "d": "Garage"
+            "a": {
+              "emoji": "📦",
+              "text": "High shelf"
+            },
+            "b": {
+              "emoji": "🫧",
+              "text": "Laundry room"
+            },
+            "c": {
+              "emoji": "🏠",
+              "text": "Easily accessible spot"
+            },
+            "d": {
+              "emoji": "🏚️",
+              "text": "Garage"
+            }
           },
           "answer": "c"
         },
         {
           "question": "What is the main reason to separate laundry by color?",
           "options": {
-            "a": "To save water",
-            "b": "To avoid color bleeding",
-            "c": "To make it heavier",
-            "d": "To make washing faster"
+            "a": {
+              "emoji": "💧",
+              "text": "To save water"
+            },
+            "b": {
+              "emoji": "👕",
+              "text": "To avoid color bleeding"
+            },
+            "c": {
+              "emoji": "⚖️",
+              "text": "To make it heavier"
+            },
+            "d": {
+              "emoji": "⏩",
+              "text": "To make washing faster"
+            }
           },
           "answer": "b"
         }
@@ -115,100 +235,220 @@
         {
           "question": "Which symbol indicates machine wash on a clothing label?",
           "options": {
-            "a": "Triangle",
-            "b": "Circle",
-            "c": "Square with a circle inside",
-            "d": "Bucket with water"
+            "a": {
+              "emoji": "🔺",
+              "text": "Triangle"
+            },
+            "b": {
+              "emoji": "⭕",
+              "text": "Circle"
+            },
+            "c": {
+              "emoji": "🔵",
+              "text": "Square with a circle inside"
+            },
+            "d": {
+              "emoji": "🪣",
+              "text": "Bucket with water"
+            }
           },
           "answer": "d"
         },
         {
           "question": "Why should you check pockets before washing clothes?",
           "options": {
-            "a": "To find money",
-            "b": "To avoid washing small items that can damage the machine",
-            "c": "To see what's inside",
-            "d": "To make laundry smell better"
+            "a": {
+              "emoji": "💰",
+              "text": "To find money"
+            },
+            "b": {
+              "emoji": "⚙️",
+              "text": "To avoid washing small items that can damage the machine"
+            },
+            "c": {
+              "emoji": "👀",
+              "text": "To see what's inside"
+            },
+            "d": {
+              "emoji": "🌸",
+              "text": "To make laundry smell better"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which fabric is typically safest for high-temperature drying?",
           "options": {
-            "a": "Cotton",
-            "b": "Wool",
-            "c": "Silk",
-            "d": "Linen"
+            "a": {
+              "emoji": "🌿",
+              "text": "Cotton"
+            },
+            "b": {
+              "emoji": "🐑",
+              "text": "Wool"
+            },
+            "c": {
+              "emoji": "✨",
+              "text": "Silk"
+            },
+            "d": {
+              "emoji": "🌾",
+              "text": "Linen"
+            }
           },
           "answer": "a"
         },
         {
           "question": "How can you prevent colors from fading in laundry?",
           "options": {
-            "a": "Wash in hot water every time",
-            "b": "Use color-safe detergent and cold water",
-            "c": "Dry in direct sunlight",
-            "d": "Shake clothes before washing"
+            "a": {
+              "emoji": "🔥",
+              "text": "Wash in hot water every time"
+            },
+            "b": {
+              "emoji": "🎨",
+              "text": "Use color-safe detergent and cold water"
+            },
+            "c": {
+              "emoji": "☀️",
+              "text": "Dry in direct sunlight"
+            },
+            "d": {
+              "emoji": "👐",
+              "text": "Shake clothes before washing"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Why should delicate fabrics be washed separately?",
           "options": {
-            "a": "They dry slower",
-            "b": "They can get damaged by rough fabrics",
-            "c": "They smell better",
-            "d": "They are heavier"
+            "a": {
+              "emoji": "⏱️",
+              "text": "They dry slower"
+            },
+            "b": {
+              "emoji": "🧵",
+              "text": "They can get damaged by rough fabrics"
+            },
+            "c": {
+              "emoji": "🌺",
+              "text": "They smell better"
+            },
+            "d": {
+              "emoji": "⚖️",
+              "text": "They are heavier"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is a recommended method for removing stains from clothing?",
           "options": {
-            "a": "Rub with soap immediately and rinse",
-            "b": "Wash immediately in hot water",
-            "c": "Iron over the stain",
-            "d": "Ignore it until next laundry"
+            "a": {
+              "emoji": "🧼",
+              "text": "Rub with soap immediately and rinse"
+            },
+            "b": {
+              "emoji": "♨️",
+              "text": "Wash immediately in hot water"
+            },
+            "c": {
+              "emoji": "👔",
+              "text": "Iron over the stain"
+            },
+            "d": {
+              "emoji": "🗑️",
+              "text": "Ignore it until next laundry"
+            }
           },
           "answer": "a"
         },
         {
           "question": "Why should you turn printed T-shirts inside out before washing?",
           "options": {
-            "a": "To make them look cleaner",
-            "b": "To prevent the print from cracking or fading",
-            "c": "To save detergent",
-            "d": "To dry faster"
+            "a": {
+              "emoji": "👀",
+              "text": "To make them look cleaner"
+            },
+            "b": {
+              "emoji": "🖼️",
+              "text": "To prevent the print from cracking or fading"
+            },
+            "c": {
+              "emoji": "💧",
+              "text": "To save detergent"
+            },
+            "d": {
+              "emoji": "💨",
+              "text": "To dry faster"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What does the 'hand wash only' label indicate?",
           "options": {
-            "a": "Machine wash is okay",
-            "b": "Use only hands, no machines",
-            "c": "Only soak for 5 minutes",
-            "d": "Use bleach"
+            "a": {
+              "emoji": "🫧",
+              "text": "Machine wash is okay"
+            },
+            "b": {
+              "emoji": "🤲",
+              "text": "Use only hands, no machines"
+            },
+            "c": {
+              "emoji": "⏱️",
+              "text": "Only soak for 5 minutes"
+            },
+            "d": {
+              "emoji": "🧪",
+              "text": "Use bleach"
+            }
           },
           "answer": "b"
         },
         {
           "question": "How often should towels be washed?",
           "options": {
-            "a": "Once a week",
-            "b": "Once a month",
-            "c": "Every day",
-            "d": "Never"
+            "a": {
+              "emoji": "📅",
+              "text": "Once a week"
+            },
+            "b": {
+              "emoji": "🗓️",
+              "text": "Once a month"
+            },
+            "c": {
+              "emoji": "📆",
+              "text": "Every day"
+            },
+            "d": {
+              "emoji": "🙅",
+              "text": "Never"
+            }
           },
           "answer": "a"
         },
         {
           "question": "Which laundry product helps soften clothes?",
           "options": {
-            "a": "Fabric softener",
-            "b": "Bleach",
-            "c": "Detergent booster",
-            "d": "Dish soap"
+            "a": {
+              "emoji": "🌸",
+              "text": "Fabric softener"
+            },
+            "b": {
+              "emoji": "🧪",
+              "text": "Bleach"
+            },
+            "c": {
+              "emoji": "🔬",
+              "text": "Detergent booster"
+            },
+            "d": {
+              "emoji": "🍽️",
+              "text": "Dish soap"
+            }
           },
           "answer": "a"
         }
@@ -222,100 +462,220 @@
         {
           "question": "Which utensil should never be used on a nonstick pan?",
           "options": {
-            "a": "Wooden spoon",
-            "b": "Silicone spatula",
-            "c": "Metal fork",
-            "d": "Rubber spatula"
+            "a": {
+              "emoji": "🥄",
+              "text": "Wooden spoon"
+            },
+            "b": {
+              "emoji": "🍳",
+              "text": "Silicone spatula"
+            },
+            "c": {
+              "emoji": "🍴",
+              "text": "Metal fork"
+            },
+            "d": {
+              "emoji": "🟡",
+              "text": "Rubber spatula"
+            }
           },
           "answer": "c"
         },
         {
           "question": "How should you store raw meat in the refrigerator?",
           "options": {
-            "a": "On the top shelf",
-            "b": "On the bottom shelf",
-            "c": "Next to cooked food",
-            "d": "Anywhere"
+            "a": {
+              "emoji": "⬆️",
+              "text": "On the top shelf"
+            },
+            "b": {
+              "emoji": "⬇️",
+              "text": "On the bottom shelf"
+            },
+            "c": {
+              "emoji": "🍳",
+              "text": "Next to cooked food"
+            },
+            "d": {
+              "emoji": "🤷",
+              "text": "Anywhere"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Why should you wipe spills immediately?",
           "options": {
-            "a": "To make the floor shiny",
-            "b": "To prevent slips and bacteria growth",
-            "c": "To save cleaning products",
-            "d": "To make cooking faster"
+            "a": {
+              "emoji": "✨",
+              "text": "To make the floor shiny"
+            },
+            "b": {
+              "emoji": "🦠",
+              "text": "To prevent slips and bacteria growth"
+            },
+            "c": {
+              "emoji": "💰",
+              "text": "To save cleaning products"
+            },
+            "d": {
+              "emoji": "⏩",
+              "text": "To make cooking faster"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What is the safest way to thaw frozen meat?",
           "options": {
-            "a": "Leave it on the counter",
-            "b": "In the refrigerator",
-            "c": "In hot water",
-            "d": "In sunlight"
+            "a": {
+              "emoji": "🌡️",
+              "text": "Leave it on the counter"
+            },
+            "b": {
+              "emoji": "❄️",
+              "text": "In the refrigerator"
+            },
+            "c": {
+              "emoji": "♨️",
+              "text": "In hot water"
+            },
+            "d": {
+              "emoji": "☀️",
+              "text": "In sunlight"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is the best way to clean a cutting board after chopping raw meat?",
           "options": {
-            "a": "Wash with soap and hot water",
-            "b": "Rinse with cold water",
-            "c": "Wipe with a paper towel",
-            "d": "Soak in water for a week"
+            "a": {
+              "emoji": "🧼",
+              "text": "Wash with soap and hot water"
+            },
+            "b": {
+              "emoji": "💧",
+              "text": "Rinse with cold water"
+            },
+            "c": {
+              "emoji": "🧻",
+              "text": "Wipe with a paper towel"
+            },
+            "d": {
+              "emoji": "🫙",
+              "text": "Soak in water for a week"
+            }
           },
           "answer": "a"
         },
         {
           "question": "Why shouldn't you mix cleaning chemicals like bleach and ammonia?",
           "options": {
-            "a": "It creates bubbles",
-            "b": "It can release toxic gases",
-            "c": "It makes them less effective",
-            "d": "It smells better"
+            "a": {
+              "emoji": "🫧",
+              "text": "It creates bubbles"
+            },
+            "b": {
+              "emoji": "☠️",
+              "text": "It can release toxic gases"
+            },
+            "c": {
+              "emoji": "📉",
+              "text": "It makes them less effective"
+            },
+            "d": {
+              "emoji": "🌸",
+              "text": "It smells better"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which kitchen item is safest to clean in a dishwasher?",
           "options": {
-            "a": "Wooden spoon",
-            "b": "Stainless steel pan",
-            "c": "Knife with wooden handle",
-            "d": "Nonstick pan"
+            "a": {
+              "emoji": "🥄",
+              "text": "Wooden spoon"
+            },
+            "b": {
+              "emoji": "🥘",
+              "text": "Stainless steel pan"
+            },
+            "c": {
+              "emoji": "🔪",
+              "text": "Knife with wooden handle"
+            },
+            "d": {
+              "emoji": "🍲",
+              "text": "Nonstick pan"
+            }
           },
           "answer": "b"
         },
         {
           "question": "How should you store leftover cooked food?",
           "options": {
-            "a": "At room temperature",
-            "b": "In airtight containers in the fridge",
-            "c": "In a paper bag",
-            "d": "Covered loosely on the counter"
+            "a": {
+              "emoji": "🌡️",
+              "text": "At room temperature"
+            },
+            "b": {
+              "emoji": "📦",
+              "text": "In airtight containers in the fridge"
+            },
+            "c": {
+              "emoji": "🛍️",
+              "text": "In a paper bag"
+            },
+            "d": {
+              "emoji": "🫙",
+              "text": "Covered loosely on the counter"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What is the main reason to regularly clean the fridge?",
           "options": {
-            "a": "To organize shelves",
-            "b": "To remove old food and prevent bacteria growth",
-            "c": "To make it smell good",
-            "d": "To make it look new"
+            "a": {
+              "emoji": "📦",
+              "text": "To organize shelves"
+            },
+            "b": {
+              "emoji": "🦠",
+              "text": "To remove old food and prevent bacteria growth"
+            },
+            "c": {
+              "emoji": "🌺",
+              "text": "To make it smell good"
+            },
+            "d": {
+              "emoji": "✨",
+              "text": "To make it look new"
+            }
           },
           "answer": "b"
         },
         {
           "question": "How can cross-contamination be avoided?",
           "options": {
-            "a": "Wash hands and utensils between handling raw and cooked food",
-            "b": "Use the same knife for everything",
-            "c": "Leave food uncovered",
-            "d": "Store all food together"
+            "a": {
+              "emoji": "🤲",
+              "text": "Wash hands and utensils between handling raw and cooked food"
+            },
+            "b": {
+              "emoji": "🔪",
+              "text": "Use the same knife for everything"
+            },
+            "c": {
+              "emoji": "🌬️",
+              "text": "Leave food uncovered"
+            },
+            "d": {
+              "emoji": "🗃️",
+              "text": "Store all food together"
+            }
           },
           "answer": "a"
         }
@@ -329,100 +689,220 @@
         {
           "question": "What does \"time management\" mean?",
           "options": {
-            "a": "Doing everything at once",
-            "b": "Planning how to use your time effectively",
-            "c": "Working nonstop",
-            "d": "Avoiding responsibilities"
+            "a": {
+              "emoji": "🌀",
+              "text": "Doing everything at once"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "Planning how to use your time effectively"
+            },
+            "c": {
+              "emoji": "😤",
+              "text": "Working nonstop"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "Avoiding responsibilities"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is an example of good time management?",
           "options": {
-            "a": "Ignoring deadlines",
-            "b": "Doing tasks randomly",
-            "c": "Making a to-do list",
-            "d": "Waiting until the last minute"
+            "a": {
+              "emoji": "🙈",
+              "text": "Ignoring deadlines"
+            },
+            "b": {
+              "emoji": "🎲",
+              "text": "Doing tasks randomly"
+            },
+            "c": {
+              "emoji": "📝",
+              "text": "Making a to-do list"
+            },
+            "d": {
+              "emoji": "⏳",
+              "text": "Waiting until the last minute"
+            }
           },
           "answer": "c"
         },
         {
           "question": "Why is time management important?",
           "options": {
-            "a": "It makes time go faster",
-            "b": "It reduces stress and missed deadlines",
-            "c": "It eliminates work",
-            "d": "It gives you more hours in a day"
+            "a": {
+              "emoji": "⚡",
+              "text": "It makes time go faster"
+            },
+            "b": {
+              "emoji": "😌",
+              "text": "It reduces stress and missed deadlines"
+            },
+            "c": {
+              "emoji": "🧹",
+              "text": "It eliminates work"
+            },
+            "d": {
+              "emoji": "⏰",
+              "text": "It gives you more hours in a day"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which tool helps you remember tasks?",
           "options": {
-            "a": "A calendar",
-            "b": "A video game",
-            "c": "A TV show",
-            "d": "A random note in your head"
+            "a": {
+              "emoji": "📅",
+              "text": "A calendar"
+            },
+            "b": {
+              "emoji": "🎮",
+              "text": "A video game"
+            },
+            "c": {
+              "emoji": "📺",
+              "text": "A TV show"
+            },
+            "d": {
+              "emoji": "🧠",
+              "text": "A random note in your head"
+            }
           },
           "answer": "a"
         },
         {
           "question": "What happens when time is poorly managed?",
           "options": {
-            "a": "More free time",
-            "b": "Less stress",
-            "c": "Missed deadlines and stress",
-            "d": "Better sleep"
+            "a": {
+              "emoji": "🎉",
+              "text": "More free time"
+            },
+            "b": {
+              "emoji": "😌",
+              "text": "Less stress"
+            },
+            "c": {
+              "emoji": "😰",
+              "text": "Missed deadlines and stress"
+            },
+            "d": {
+              "emoji": "😴",
+              "text": "Better sleep"
+            }
           },
           "answer": "c"
         },
         {
           "question": "Which task should usually be done first?",
           "options": {
-            "a": "The easiest",
-            "b": "The most urgent or important",
-            "c": "The most fun",
-            "d": "The longest"
+            "a": {
+              "emoji": "😊",
+              "text": "The easiest"
+            },
+            "b": {
+              "emoji": "🔥",
+              "text": "The most urgent or important"
+            },
+            "c": {
+              "emoji": "🎉",
+              "text": "The most fun"
+            },
+            "d": {
+              "emoji": "📏",
+              "text": "The longest"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Time management helps you balance:",
           "options": {
-            "a": "Sleep, work, and free time",
-            "b": "Only work",
-            "c": "Only school",
-            "d": "Only fun"
+            "a": {
+              "emoji": "⚖️",
+              "text": "Sleep, work, and free time"
+            },
+            "b": {
+              "emoji": "💼",
+              "text": "Only work"
+            },
+            "c": {
+              "emoji": "🏫",
+              "text": "Only school"
+            },
+            "d": {
+              "emoji": "🎈",
+              "text": "Only fun"
+            }
           },
           "answer": "a"
         },
         {
           "question": "Which is a daily responsibility for many adults?",
           "options": {
-            "a": "Paying bills",
-            "b": "Going to work or school",
-            "c": "Household chores",
-            "d": "All of the above"
+            "a": {
+              "emoji": "💳",
+              "text": "Paying bills"
+            },
+            "b": {
+              "emoji": "🏢",
+              "text": "Going to work or school"
+            },
+            "c": {
+              "emoji": "🏠",
+              "text": "Household chores"
+            },
+            "d": {
+              "emoji": "📋",
+              "text": "All of the above"
+            }
           },
           "answer": "d"
         },
         {
           "question": "What is a \"deadline\"?",
           "options": {
-            "a": "A suggestion",
-            "b": "The latest time a task must be completed",
-            "c": "A reward",
-            "d": "A break"
+            "a": {
+              "emoji": "💭",
+              "text": "A suggestion"
+            },
+            "b": {
+              "emoji": "⏰",
+              "text": "The latest time a task must be completed"
+            },
+            "c": {
+              "emoji": "🏆",
+              "text": "A reward"
+            },
+            "d": {
+              "emoji": "☕",
+              "text": "A break"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Good time management mostly depends on:",
           "options": {
-            "a": "Luck",
-            "b": "Other people",
-            "c": "Your choices and planning",
-            "d": "Technology alone"
+            "a": {
+              "emoji": "🍀",
+              "text": "Luck"
+            },
+            "b": {
+              "emoji": "👥",
+              "text": "Other people"
+            },
+            "c": {
+              "emoji": "🎯",
+              "text": "Your choices and planning"
+            },
+            "d": {
+              "emoji": "💻",
+              "text": "Technology alone"
+            }
           },
           "answer": "c"
         }
@@ -436,100 +916,220 @@
         {
           "question": "What is a to-do list used for?",
           "options": {
-            "a": "Decoration",
-            "b": "Tracking completed tasks",
-            "c": "Planning what needs to be done",
-            "d": "Entertainment"
+            "a": {
+              "emoji": "🎨",
+              "text": "Decoration"
+            },
+            "b": {
+              "emoji": "☑️",
+              "text": "Tracking completed tasks"
+            },
+            "c": {
+              "emoji": "📋",
+              "text": "Planning what needs to be done"
+            },
+            "d": {
+              "emoji": "🎬",
+              "text": "Entertainment"
+            }
           },
           "answer": "c"
         },
         {
           "question": "When should you make a plan for your day?",
           "options": {
-            "a": "After the day ends",
-            "b": "When you feel stressed",
-            "c": "At the start of the day or the night before",
-            "d": "Never"
+            "a": {
+              "emoji": "🌙",
+              "text": "After the day ends"
+            },
+            "b": {
+              "emoji": "😤",
+              "text": "When you feel stressed"
+            },
+            "c": {
+              "emoji": "🌅",
+              "text": "At the start of the day or the night before"
+            },
+            "d": {
+              "emoji": "🙅",
+              "text": "Never"
+            }
           },
           "answer": "c"
         },
         {
           "question": "Which task should be written on a daily plan?",
           "options": {
-            "a": "Guessing what might happen",
-            "b": "Required tasks and appointments",
-            "c": "Only fun activities",
-            "d": "Nothing important"
+            "a": {
+              "emoji": "🎲",
+              "text": "Guessing what might happen"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "Required tasks and appointments"
+            },
+            "c": {
+              "emoji": "🎉",
+              "text": "Only fun activities"
+            },
+            "d": {
+              "emoji": "🤷",
+              "text": "Nothing important"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What helps prevent forgetting appointments?",
           "options": {
-            "a": "Memory alone",
-            "b": "A calendar reminder",
-            "c": "Waiting",
-            "d": "Stress"
+            "a": {
+              "emoji": "🧠",
+              "text": "Memory alone"
+            },
+            "b": {
+              "emoji": "📅",
+              "text": "A calendar reminder"
+            },
+            "c": {
+              "emoji": "⏳",
+              "text": "Waiting"
+            },
+            "d": {
+              "emoji": "😰",
+              "text": "Stress"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is an example of a routine?",
           "options": {
-            "a": "Random tasks",
-            "b": "Doing things whenever",
-            "c": "A repeated daily habit like morning prep",
-            "d": "Avoiding schedules"
+            "a": {
+              "emoji": "🎲",
+              "text": "Random tasks"
+            },
+            "b": {
+              "emoji": "🌀",
+              "text": "Doing things whenever"
+            },
+            "c": {
+              "emoji": "🔄",
+              "text": "A repeated daily habit like morning prep"
+            },
+            "d": {
+              "emoji": "🙅",
+              "text": "Avoiding schedules"
+            }
           },
           "answer": "c"
         },
         {
           "question": "How long should a daily plan be?",
           "options": {
-            "a": "Extremely detailed",
-            "b": "Unrealistic",
-            "c": "Reasonable and achievable",
-            "d": "Empty"
+            "a": {
+              "emoji": "📚",
+              "text": "Extremely detailed"
+            },
+            "b": {
+              "emoji": "🌈",
+              "text": "Unrealistic"
+            },
+            "c": {
+              "emoji": "🎯",
+              "text": "Reasonable and achievable"
+            },
+            "d": {
+              "emoji": "📭",
+              "text": "Empty"
+            }
           },
           "answer": "c"
         },
         {
           "question": "What is a benefit of planning your day?",
           "options": {
-            "a": "Less flexibility",
-            "b": "More stress",
-            "c": "Better focus and productivity",
-            "d": "Less free time"
+            "a": {
+              "emoji": "🔒",
+              "text": "Less flexibility"
+            },
+            "b": {
+              "emoji": "😰",
+              "text": "More stress"
+            },
+            "c": {
+              "emoji": "🎯",
+              "text": "Better focus and productivity"
+            },
+            "d": {
+              "emoji": "⏱️",
+              "text": "Less free time"
+            }
           },
           "answer": "c"
         },
         {
           "question": "Which tool is best for tracking deadlines?",
           "options": {
-            "a": "Alarm clock",
-            "b": "Calendar app or planner",
-            "c": "Calculator",
-            "d": "Notes app only"
+            "a": {
+              "emoji": "⏰",
+              "text": "Alarm clock"
+            },
+            "b": {
+              "emoji": "📅",
+              "text": "Calendar app or planner"
+            },
+            "c": {
+              "emoji": "🔢",
+              "text": "Calculator"
+            },
+            "d": {
+              "emoji": "📝",
+              "text": "Notes app only"
+            }
           },
           "answer": "b"
         },
         {
           "question": "If a task takes 30 minutes, what should you do?",
           "options": {
-            "a": "Ignore it",
-            "b": "Guess the time",
-            "c": "Schedule about 30 minutes for it",
-            "d": "Schedule 5 minutes"
+            "a": {
+              "emoji": "🙈",
+              "text": "Ignore it"
+            },
+            "b": {
+              "emoji": "🎲",
+              "text": "Guess the time"
+            },
+            "c": {
+              "emoji": "⏱️",
+              "text": "Schedule about 30 minutes for it"
+            },
+            "d": {
+              "emoji": "⚡",
+              "text": "Schedule 5 minutes"
+            }
           },
           "answer": "c"
         },
         {
           "question": "Planning helps you avoid:",
           "options": {
-            "a": "Breaks",
-            "b": "Fun",
-            "c": "Overcommitting your time",
-            "d": "Goals"
+            "a": {
+              "emoji": "☕",
+              "text": "Breaks"
+            },
+            "b": {
+              "emoji": "🎉",
+              "text": "Fun"
+            },
+            "c": {
+              "emoji": "📅",
+              "text": "Overcommitting your time"
+            },
+            "d": {
+              "emoji": "🎯",
+              "text": "Goals"
+            }
           },
           "answer": "c"
         }
@@ -543,100 +1143,220 @@
         {
           "question": "What does it mean to \"prioritize\"?",
           "options": {
-            "a": "Do everything",
-            "b": "Choose what matters most first",
-            "c": "Avoid tasks",
-            "d": "Work slower"
+            "a": {
+              "emoji": "🌀",
+              "text": "Do everything"
+            },
+            "b": {
+              "emoji": "🎯",
+              "text": "Choose what matters most first"
+            },
+            "c": {
+              "emoji": "🙈",
+              "text": "Avoid tasks"
+            },
+            "d": {
+              "emoji": "🐢",
+              "text": "Work slower"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which task should usually come first?",
           "options": {
-            "a": "Due next week",
-            "b": "Due today and important",
-            "c": "Optional",
-            "d": "Fun"
+            "a": {
+              "emoji": "📅",
+              "text": "Due next week"
+            },
+            "b": {
+              "emoji": "🔥",
+              "text": "Due today and important"
+            },
+            "c": {
+              "emoji": "🤷",
+              "text": "Optional"
+            },
+            "d": {
+              "emoji": "🎉",
+              "text": "Fun"
+            }
           },
           "answer": "b"
         },
         {
           "question": "\"Urgent\" tasks are:",
           "options": {
-            "a": "Optional",
-            "b": "Due soon",
-            "c": "Easy",
-            "d": "Fun"
+            "a": {
+              "emoji": "🤷",
+              "text": "Optional"
+            },
+            "b": {
+              "emoji": "⏰",
+              "text": "Due soon"
+            },
+            "c": {
+              "emoji": "😊",
+              "text": "Easy"
+            },
+            "d": {
+              "emoji": "🎉",
+              "text": "Fun"
+            }
           },
           "answer": "b"
         },
         {
           "question": "\"Important\" tasks are:",
           "options": {
-            "a": "Stressful",
-            "b": "Long",
-            "c": "Necessary for goals or responsibilities",
-            "d": "Quick"
+            "a": {
+              "emoji": "😰",
+              "text": "Stressful"
+            },
+            "b": {
+              "emoji": "📏",
+              "text": "Long"
+            },
+            "c": {
+              "emoji": "🎯",
+              "text": "Necessary for goals or responsibilities"
+            },
+            "d": {
+              "emoji": "⚡",
+              "text": "Quick"
+            }
           },
           "answer": "c"
         },
         {
           "question": "If two tasks conflict, what should you do?",
           "options": {
-            "a": "Ignore both",
-            "b": "Choose the more urgent or important one",
-            "c": "Panic",
-            "d": "Do neither"
+            "a": {
+              "emoji": "🙈",
+              "text": "Ignore both"
+            },
+            "b": {
+              "emoji": "🔥",
+              "text": "Choose the more urgent or important one"
+            },
+            "c": {
+              "emoji": "😱",
+              "text": "Panic"
+            },
+            "d": {
+              "emoji": "🤷",
+              "text": "Do neither"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What happens if you ignore priorities?",
           "options": {
-            "a": "More productivity",
-            "b": "Missed deadlines and stress",
-            "c": "Better results",
-            "d": "More free time"
+            "a": {
+              "emoji": "📈",
+              "text": "More productivity"
+            },
+            "b": {
+              "emoji": "😰",
+              "text": "Missed deadlines and stress"
+            },
+            "c": {
+              "emoji": "🏆",
+              "text": "Better results"
+            },
+            "d": {
+              "emoji": "🎉",
+              "text": "More free time"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is a high-priority task?",
           "options": {
-            "a": "Watching a show",
-            "b": "Homework due tonight",
-            "c": "Scrolling social media",
-            "d": "Cleaning for fun"
+            "a": {
+              "emoji": "📺",
+              "text": "Watching a show"
+            },
+            "b": {
+              "emoji": "📚",
+              "text": "Homework due tonight"
+            },
+            "c": {
+              "emoji": "📱",
+              "text": "Scrolling social media"
+            },
+            "d": {
+              "emoji": "🧹",
+              "text": "Cleaning for fun"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What is a realistic workload?",
           "options": {
-            "a": "Filling every minute",
-            "b": "Planning more than possible",
-            "c": "Planning what you can reasonably complete",
-            "d": "Doing nothing"
+            "a": {
+              "emoji": "⏱️",
+              "text": "Filling every minute"
+            },
+            "b": {
+              "emoji": "😵",
+              "text": "Planning more than possible"
+            },
+            "c": {
+              "emoji": "🎯",
+              "text": "Planning what you can reasonably complete"
+            },
+            "d": {
+              "emoji": "😴",
+              "text": "Doing nothing"
+            }
           },
           "answer": "c"
         },
         {
           "question": "Which tool helps with prioritization?",
           "options": {
-            "a": "Random choice",
-            "b": "A priority list or ranking",
-            "c": "Ignoring deadlines",
-            "d": "Multitasking"
+            "a": {
+              "emoji": "🎲",
+              "text": "Random choice"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "A priority list or ranking"
+            },
+            "c": {
+              "emoji": "🙈",
+              "text": "Ignoring deadlines"
+            },
+            "d": {
+              "emoji": "🔀",
+              "text": "Multitasking"
+            }
           },
           "answer": "b"
         },
         {
           "question": "A good priority system helps you:",
           "options": {
-            "a": "Avoid work",
-            "b": "Meet deadlines and reduce stress",
-            "c": "Waste time",
-            "d": "Be perfect"
+            "a": {
+              "emoji": "🙈",
+              "text": "Avoid work"
+            },
+            "b": {
+              "emoji": "😌",
+              "text": "Meet deadlines and reduce stress"
+            },
+            "c": {
+              "emoji": "⏳",
+              "text": "Waste time"
+            },
+            "d": {
+              "emoji": "💫",
+              "text": "Be perfect"
+            }
           },
           "answer": "b"
         }
@@ -650,100 +1370,220 @@
         {
           "question": "What is a \"time waster\"?",
           "options": {
-            "a": "A break",
-            "b": "Something that unintentionally consumes time",
-            "c": "A job",
-            "d": "A goal"
+            "a": {
+              "emoji": "☕",
+              "text": "A break"
+            },
+            "b": {
+              "emoji": "⏳",
+              "text": "Something that unintentionally consumes time"
+            },
+            "c": {
+              "emoji": "💼",
+              "text": "A job"
+            },
+            "d": {
+              "emoji": "🎯",
+              "text": "A goal"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is a common time waster?",
           "options": {
-            "a": "Planning",
-            "b": "Social media scrolling",
-            "c": "Studying",
-            "d": "Sleeping"
+            "a": {
+              "emoji": "📋",
+              "text": "Planning"
+            },
+            "b": {
+              "emoji": "📱",
+              "text": "Social media scrolling"
+            },
+            "c": {
+              "emoji": "📚",
+              "text": "Studying"
+            },
+            "d": {
+              "emoji": "😴",
+              "text": "Sleeping"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Multitasking often leads to:",
           "options": {
-            "a": "Better focus",
-            "b": "Faster completion",
-            "c": "More mistakes and slower work",
-            "d": "Less stress"
+            "a": {
+              "emoji": "🎯",
+              "text": "Better focus"
+            },
+            "b": {
+              "emoji": "⚡",
+              "text": "Faster completion"
+            },
+            "c": {
+              "emoji": "🐌",
+              "text": "More mistakes and slower work"
+            },
+            "d": {
+              "emoji": "😌",
+              "text": "Less stress"
+            }
           },
           "answer": "c"
         },
         {
           "question": "What helps improve focus?",
           "options": {
-            "a": "Notifications on",
-            "b": "Quiet environment",
-            "c": "Constant interruptions",
-            "d": "Doing everything at once"
+            "a": {
+              "emoji": "🔔",
+              "text": "Notifications on"
+            },
+            "b": {
+              "emoji": "🤫",
+              "text": "Quiet environment"
+            },
+            "c": {
+              "emoji": "📣",
+              "text": "Constant interruptions"
+            },
+            "d": {
+              "emoji": "🌀",
+              "text": "Doing everything at once"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What should you do when distracted?",
           "options": {
-            "a": "Quit the task",
-            "b": "Refocus and remove distractions",
-            "c": "Switch tasks endlessly",
-            "d": "Ignore it"
+            "a": {
+              "emoji": "🚪",
+              "text": "Quit the task"
+            },
+            "b": {
+              "emoji": "🎯",
+              "text": "Refocus and remove distractions"
+            },
+            "c": {
+              "emoji": "🔀",
+              "text": "Switch tasks endlessly"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "Ignore it"
+            }
           },
           "answer": "b"
         },
         {
           "question": "A focused work session should be:",
           "options": {
-            "a": "Endless",
-            "b": "Short with breaks (like 25–50 minutes)",
-            "c": "Random",
-            "d": "Only at night"
+            "a": {
+              "emoji": "♾️",
+              "text": "Endless"
+            },
+            "b": {
+              "emoji": "⏱️",
+              "text": "Short with breaks (like 25–50 minutes)"
+            },
+            "c": {
+              "emoji": "🎲",
+              "text": "Random"
+            },
+            "d": {
+              "emoji": "🌙",
+              "text": "Only at night"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is a healthy break?",
           "options": {
-            "a": "Endless scrolling",
-            "b": "Stretching or walking briefly",
-            "c": "Avoiding work forever",
-            "d": "Watching full episodes"
+            "a": {
+              "emoji": "📱",
+              "text": "Endless scrolling"
+            },
+            "b": {
+              "emoji": "🚶",
+              "text": "Stretching or walking briefly"
+            },
+            "c": {
+              "emoji": "🏖️",
+              "text": "Avoiding work forever"
+            },
+            "d": {
+              "emoji": "📺",
+              "text": "Watching full episodes"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What happens when distractions increase?",
           "options": {
-            "a": "Productivity improves",
-            "b": "Tasks take longer",
-            "c": "Focus increases",
-            "d": "Stress disappears"
+            "a": {
+              "emoji": "📈",
+              "text": "Productivity improves"
+            },
+            "b": {
+              "emoji": "⏳",
+              "text": "Tasks take longer"
+            },
+            "c": {
+              "emoji": "🎯",
+              "text": "Focus increases"
+            },
+            "d": {
+              "emoji": "😌",
+              "text": "Stress disappears"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Turning off notifications helps because it:",
           "options": {
-            "a": "Makes you bored",
-            "b": "Reduces interruptions",
-            "c": "Wastes time",
-            "d": "Cancels tasks"
+            "a": {
+              "emoji": "😑",
+              "text": "Makes you bored"
+            },
+            "b": {
+              "emoji": "🤫",
+              "text": "Reduces interruptions"
+            },
+            "c": {
+              "emoji": "⏳",
+              "text": "Wastes time"
+            },
+            "d": {
+              "emoji": "🗑️",
+              "text": "Cancels tasks"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Managing focus helps you:",
           "options": {
-            "a": "Work less",
-            "b": "Work more efficiently",
-            "c": "Avoid responsibility",
-            "d": "Skip deadlines"
+            "a": {
+              "emoji": "😎",
+              "text": "Work less"
+            },
+            "b": {
+              "emoji": "⚡",
+              "text": "Work more efficiently"
+            },
+            "c": {
+              "emoji": "🙈",
+              "text": "Avoid responsibility"
+            },
+            "d": {
+              "emoji": "🏃",
+              "text": "Skip deadlines"
+            }
           },
           "answer": "b"
         }
@@ -757,102 +1597,2492 @@
         {
           "question": "Why is energy management important?",
           "options": {
-            "a": "Time doesn't matter",
-            "b": "Energy affects how well you work",
-            "c": "Sleep is optional",
-            "d": "Work should be nonstop"
+            "a": {
+              "emoji": "🤷",
+              "text": "Time doesn't matter"
+            },
+            "b": {
+              "emoji": "⚡",
+              "text": "Energy affects how well you work"
+            },
+            "c": {
+              "emoji": "😴",
+              "text": "Sleep is optional"
+            },
+            "d": {
+              "emoji": "😤",
+              "text": "Work should be nonstop"
+            }
           },
           "answer": "b"
         },
         {
           "question": "When should you schedule hard tasks?",
           "options": {
-            "a": "When tired",
-            "b": "During high-energy times",
-            "c": "Late at night only",
-            "d": "Randomly"
+            "a": {
+              "emoji": "😴",
+              "text": "When tired"
+            },
+            "b": {
+              "emoji": "⚡",
+              "text": "During high-energy times"
+            },
+            "c": {
+              "emoji": "🌙",
+              "text": "Late at night only"
+            },
+            "d": {
+              "emoji": "🎲",
+              "text": "Randomly"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What happens if you over-schedule yourself?",
           "options": {
-            "a": "Higher quality work",
-            "b": "Burnout and stress",
-            "c": "More free time",
-            "d": "Better sleep"
+            "a": {
+              "emoji": "🏆",
+              "text": "Higher quality work"
+            },
+            "b": {
+              "emoji": "🔥",
+              "text": "Burnout and stress"
+            },
+            "c": {
+              "emoji": "🎉",
+              "text": "More free time"
+            },
+            "d": {
+              "emoji": "😴",
+              "text": "Better sleep"
+            }
           },
           "answer": "b"
         },
         {
           "question": "A balanced schedule includes:",
           "options": {
-            "a": "Only work",
-            "b": "Work, rest, and personal time",
-            "c": "No breaks",
-            "d": "No flexibility"
+            "a": {
+              "emoji": "💼",
+              "text": "Only work"
+            },
+            "b": {
+              "emoji": "⚖️",
+              "text": "Work, rest, and personal time"
+            },
+            "c": {
+              "emoji": "💵",
+              "text": "No breaks"
+            },
+            "d": {
+              "emoji": "🔒",
+              "text": "No flexibility"
+            }
           },
           "answer": "b"
         },
         {
           "question": "What is burnout?",
           "options": {
-            "a": "Motivation boost",
-            "b": "Long-term exhaustion from stress",
-            "c": "Good productivity",
-            "d": "Free time"
+            "a": {
+              "emoji": "💪",
+              "text": "Motivation boost"
+            },
+            "b": {
+              "emoji": "😩",
+              "text": "Long-term exhaustion from stress"
+            },
+            "c": {
+              "emoji": "📈",
+              "text": "Good productivity"
+            },
+            "d": {
+              "emoji": "🎉",
+              "text": "Free time"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Which is a sign your schedule needs adjustment?",
           "options": {
-            "a": "Feeling calm",
-            "b": "Constant exhaustion and missed tasks",
-            "c": "Having breaks",
-            "d": "Feeling balanced"
+            "a": {
+              "emoji": "😌",
+              "text": "Feeling calm"
+            },
+            "b": {
+              "emoji": "😩",
+              "text": "Constant exhaustion and missed tasks"
+            },
+            "c": {
+              "emoji": "☕",
+              "text": "Having breaks"
+            },
+            "d": {
+              "emoji": "⚖️",
+              "text": "Feeling balanced"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Why is flexibility important in time management?",
           "options": {
-            "a": "Life is unpredictable",
-            "b": "Plans never change",
-            "c": "It reduces productivity",
-            "d": "It avoids responsibility"
+            "a": {
+              "emoji": "🌊",
+              "text": "Life is unpredictable"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "Plans never change"
+            },
+            "c": {
+              "emoji": "📉",
+              "text": "It reduces productivity"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "It avoids responsibility"
+            }
           },
           "answer": "a"
         },
         {
           "question": "What should you do when plans change?",
           "options": {
-            "a": "Quit",
-            "b": "Adjust your schedule realistically",
-            "c": "Panic",
-            "d": "Ignore everything"
+            "a": {
+              "emoji": "🚪",
+              "text": "Quit"
+            },
+            "b": {
+              "emoji": "🗓️",
+              "text": "Adjust your schedule realistically"
+            },
+            "c": {
+              "emoji": "😱",
+              "text": "Panic"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "Ignore everything"
+            }
           },
           "answer": "b"
         },
         {
           "question": "Long-term time management helps with:",
           "options": {
-            "a": "Short-term stress only",
-            "b": "Life balance and goal achievement",
-            "c": "Avoiding work",
-            "d": "Eliminating effort"
+            "a": {
+              "emoji": "⏱️",
+              "text": "Short-term stress only"
+            },
+            "b": {
+              "emoji": "🎯",
+              "text": "Life balance and goal achievement"
+            },
+            "c": {
+              "emoji": "🏖️",
+              "text": "Avoiding work"
+            },
+            "d": {
+              "emoji": "😴",
+              "text": "Eliminating effort"
+            }
           },
           "answer": "b"
         },
         {
           "question": "The ultimate goal of time management is to:",
           "options": {
-            "a": "Be busy",
-            "b": "Control every minute",
-            "c": "Live a balanced, productive life",
-            "d": "Work nonstop"
+            "a": {
+              "emoji": "🌀",
+              "text": "Be busy"
+            },
+            "b": {
+              "emoji": "⏱️",
+              "text": "Control every minute"
+            },
+            "c": {
+              "emoji": "🌟",
+              "text": "Live a balanced, productive life"
+            },
+            "d": {
+              "emoji": "😤",
+              "text": "Work nonstop"
+            }
           },
           "answer": "c"
+        }
+      ]
+    },
+    {
+      "title": "Dashboard Warning Lights",
+      "difficulty": "Easy",
+      "category": "Car Care",
+      "questions": [
+        {
+          "question": "What does the check engine light usually indicate?",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "Low tire pressure"
+            },
+            "b": {
+              "emoji": "⚙️",
+              "text": "Engine or emissions issue"
+            },
+            "c": {
+              "emoji": "⛽",
+              "text": "Low gas"
+            },
+            "d": {
+              "emoji": "💡",
+              "text": "Headlight malfunction"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "If your temperature warning light turns on, you should:",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "Keep driving normally"
+            },
+            "b": {
+              "emoji": "🌡️",
+              "text": "Turn up the heater"
+            },
+            "c": {
+              "emoji": "🛑",
+              "text": "Pull over and turn off the engine"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "Ignore it"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "A flashing check engine light usually means:",
+          "options": {
+            "a": {
+              "emoji": "🟡",
+              "text": "Minor issue"
+            },
+            "b": {
+              "emoji": "🔴",
+              "text": "Urgent problem"
+            },
+            "c": {
+              "emoji": "🛢️",
+              "text": "Oil change needed"
+            },
+            "d": {
+              "emoji": "🔋",
+              "text": "Battery is low"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "The oil pressure light means:",
+          "options": {
+            "a": {
+              "emoji": "⛽",
+              "text": "You need gas"
+            },
+            "b": {
+              "emoji": "🛢️",
+              "text": "Oil level or pressure is low"
+            },
+            "c": {
+              "emoji": "🚗",
+              "text": "Tires are low"
+            },
+            "d": {
+              "emoji": "🛞",
+              "text": "Brakes are worn"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "The tire pressure (TPMS) light means:",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "One or more tires are underinflated"
+            },
+            "b": {
+              "emoji": "🆕",
+              "text": "Tires are too new"
+            },
+            "c": {
+              "emoji": "↔️",
+              "text": "Alignment issue"
+            },
+            "d": {
+              "emoji": "🛑",
+              "text": "Brake problem"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "If the battery light turns on while driving, it likely means:",
+          "options": {
+            "a": {
+              "emoji": "🔋",
+              "text": "Battery is fully charged"
+            },
+            "b": {
+              "emoji": "⚡",
+              "text": "Charging system problem"
+            },
+            "c": {
+              "emoji": "❄️",
+              "text": "AC is broken"
+            },
+            "d": {
+              "emoji": "🛢️",
+              "text": "Oil is dirty"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which light requires immediate action?",
+          "options": {
+            "a": {
+              "emoji": "💧",
+              "text": "Low washer fluid"
+            },
+            "b": {
+              "emoji": "🌡️",
+              "text": "Temperature warning"
+            },
+            "c": {
+              "emoji": "⛽",
+              "text": "Low fuel"
+            },
+            "d": {
+              "emoji": "💺",
+              "text": "Seatbelt reminder"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Yellow/orange warning lights usually mean:",
+          "options": {
+            "a": {
+              "emoji": "🚨",
+              "text": "Immediate danger"
+            },
+            "b": {
+              "emoji": "🟡",
+              "text": "Minor issue or service soon"
+            },
+            "c": {
+              "emoji": "🔧",
+              "text": "Car is broken"
+            },
+            "d": {
+              "emoji": "💥",
+              "text": "Engine failure"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Red warning lights typically mean:",
+          "options": {
+            "a": {
+              "emoji": "🟢",
+              "text": "Safe to drive"
+            },
+            "b": {
+              "emoji": "🛑",
+              "text": "Stop immediately"
+            },
+            "c": {
+              "emoji": "🔵",
+              "text": "Low priority"
+            },
+            "d": {
+              "emoji": "🎨",
+              "text": "Cosmetic issue"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "If you don't recognize a dashboard symbol, you should:",
+          "options": {
+            "a": {
+              "emoji": "🙈",
+              "text": "Ignore it"
+            },
+            "b": {
+              "emoji": "🔍",
+              "text": "Google randomly"
+            },
+            "c": {
+              "emoji": "📖",
+              "text": "Check the owner's manual"
+            },
+            "d": {
+              "emoji": "🚗",
+              "text": "Keep driving"
+            }
+          },
+          "answer": "c"
+        }
+      ]
+    },
+    {
+      "title": "Tire Pressure",
+      "difficulty": "Easy",
+      "category": "Car Care",
+      "questions": [
+        {
+          "question": "Where do you find the recommended tire PSI?",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "Tire sidewall"
+            },
+            "b": {
+              "emoji": "🏷️",
+              "text": "Driver's door sticker"
+            },
+            "c": {
+              "emoji": "🔍",
+              "text": "Google"
+            },
+            "d": {
+              "emoji": "⛽",
+              "text": "Gas station pump"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Tire pressure should be checked when tires are:",
+          "options": {
+            "a": {
+              "emoji": "🔥",
+              "text": "Hot"
+            },
+            "b": {
+              "emoji": "❄️",
+              "text": "Cold"
+            },
+            "c": {
+              "emoji": "💧",
+              "text": "Wet"
+            },
+            "d": {
+              "emoji": "🧹",
+              "text": "Dirty"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Underinflated tires can cause:",
+          "options": {
+            "a": {
+              "emoji": "⛽",
+              "text": "Better gas mileage"
+            },
+            "b": {
+              "emoji": "🔄",
+              "text": "Faster wear"
+            },
+            "c": {
+              "emoji": "🏎️",
+              "text": "More speed"
+            },
+            "d": {
+              "emoji": "💪",
+              "text": "Stronger grip"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Overinflated tires can:",
+          "options": {
+            "a": {
+              "emoji": "😌",
+              "text": "Improve comfort"
+            },
+            "b": {
+              "emoji": "🛞",
+              "text": "Reduce traction"
+            },
+            "c": {
+              "emoji": "🛡️",
+              "text": "Increase safety"
+            },
+            "d": {
+              "emoji": "📉",
+              "text": "Lower pressure"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Proper tire pressure improves:",
+          "options": {
+            "a": {
+              "emoji": "⛽",
+              "text": "Gas mileage"
+            },
+            "b": {
+              "emoji": "🛡️",
+              "text": "Safety"
+            },
+            "c": {
+              "emoji": "⏳",
+              "text": "Tire lifespan"
+            },
+            "d": {
+              "emoji": "📋",
+              "text": "All of the above"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "If recommended PSI is 32 and your tire reads 25, you should:",
+          "options": {
+            "a": {
+              "emoji": "💨",
+              "text": "Remove air"
+            },
+            "b": {
+              "emoji": "🫁",
+              "text": "Add air"
+            },
+            "c": {
+              "emoji": "🙈",
+              "text": "Ignore it"
+            },
+            "d": {
+              "emoji": "🔧",
+              "text": "Replace tire"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Low tire pressure can increase risk of:",
+          "options": {
+            "a": {
+              "emoji": "💥",
+              "text": "Engine failure"
+            },
+            "b": {
+              "emoji": "💵",
+              "text": "Blowout"
+            },
+            "c": {
+              "emoji": "📻",
+              "text": "Radio issues"
+            },
+            "d": {
+              "emoji": "❄️",
+              "text": "AC problems"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "How often should you check tire pressure?",
+          "options": {
+            "a": {
+              "emoji": "📅",
+              "text": "Once a year"
+            },
+            "b": {
+              "emoji": "🗓️",
+              "text": "Monthly"
+            },
+            "c": {
+              "emoji": "💵",
+              "text": "Every 5 years"
+            },
+            "d": {
+              "emoji": "🙅",
+              "text": "Never"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "The PSI number on the tire sidewall indicates:",
+          "options": {
+            "a": {
+              "emoji": "🏷️",
+              "text": "Recommended PSI"
+            },
+            "b": {
+              "emoji": "⬆️",
+              "text": "Maximum PSI"
+            },
+            "c": {
+              "emoji": "⬇️",
+              "text": "Minimum PSI"
+            },
+            "d": {
+              "emoji": "🎯",
+              "text": "Ideal PSI"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Tire pressure changes with:",
+          "options": {
+            "a": {
+              "emoji": "🌡️",
+              "text": "Temperature"
+            },
+            "b": {
+              "emoji": "🎵",
+              "text": "Music volume"
+            },
+            "c": {
+              "emoji": "🎨",
+              "text": "Car color"
+            },
+            "d": {
+              "emoji": "📻",
+              "text": "Radio station"
+            }
+          },
+          "answer": "a"
+        }
+      ]
+    },
+    {
+      "title": "Engine Oil",
+      "difficulty": "Medium",
+      "category": "Car Care",
+      "questions": [
+        {
+          "question": "Oil lubricates:",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "Tires"
+            },
+            "b": {
+              "emoji": "⚙️",
+              "text": "Engine parts"
+            },
+            "c": {
+              "emoji": "🛑",
+              "text": "Brakes"
+            },
+            "d": {
+              "emoji": "🎡",
+              "text": "Steering wheel"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "To check oil level, you use the:",
+          "options": {
+            "a": {
+              "emoji": "🔧",
+              "text": "Dipstick"
+            },
+            "b": {
+              "emoji": "🧰",
+              "text": "Radiator cap"
+            },
+            "c": {
+              "emoji": "🔋",
+              "text": "Battery"
+            },
+            "d": {
+              "emoji": "⛽",
+              "text": "Gas cap"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "You should check oil when engine is:",
+          "options": {
+            "a": {
+              "emoji": "⚡",
+              "text": "Running"
+            },
+            "b": {
+              "emoji": "❄️",
+              "text": "Cold or off"
+            },
+            "c": {
+              "emoji": "🌡️",
+              "text": "Overheating"
+            },
+            "d": {
+              "emoji": "🚗",
+              "text": "Moving"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Oil below minimum line means:",
+          "options": {
+            "a": {
+              "emoji": "🟢",
+              "text": "Safe"
+            },
+            "b": {
+              "emoji": "🛢️",
+              "text": "Add oil"
+            },
+            "c": {
+              "emoji": "🔩",
+              "text": "Replace engine"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "Ignore"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Dark black thick oil may indicate:",
+          "options": {
+            "a": {
+              "emoji": "💧",
+              "text": "Fresh oil"
+            },
+            "b": {
+              "emoji": "🖤",
+              "text": "Dirty oil"
+            },
+            "c": {
+              "emoji": "⬆️",
+              "text": "Overfilled"
+            },
+            "d": {
+              "emoji": "🌟",
+              "text": "Perfect condition"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Most cars need oil changes every:",
+          "options": {
+            "a": {
+              "emoji": "📍",
+              "text": "500 miles"
+            },
+            "b": {
+              "emoji": "🛣️",
+              "text": "3,000–7,500 miles"
+            },
+            "c": {
+              "emoji": "🗺️",
+              "text": "50,000 miles"
+            },
+            "d": {
+              "emoji": "🙅",
+              "text": "Never"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Synthetic oil generally lasts:",
+          "options": {
+            "a": {
+              "emoji": "⏱️",
+              "text": "Shorter"
+            },
+            "b": {
+              "emoji": "📅",
+              "text": "Longer"
+            },
+            "c": {
+              "emoji": "💧",
+              "text": "Same as water"
+            },
+            "d": {
+              "emoji": "🗓️",
+              "text": "One week"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Low oil can cause:",
+          "options": {
+            "a": {
+              "emoji": "💥",
+              "text": "Engine damage"
+            },
+            "b": {
+              "emoji": "📈",
+              "text": "Better performance"
+            },
+            "c": {
+              "emoji": "💰",
+              "text": "Lower cost"
+            },
+            "d": {
+              "emoji": "❄️",
+              "text": "Cooler engine"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Overfilling oil can:",
+          "options": {
+            "a": {
+              "emoji": "⚙️",
+              "text": "Help engine"
+            },
+            "b": {
+              "emoji": "💥",
+              "text": "Damage engine"
+            },
+            "c": {
+              "emoji": "⛽",
+              "text": "Improve MPG"
+            },
+            "d": {
+              "emoji": "✨",
+              "text": "Clean engine"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Oil change neglect can lead to:",
+          "options": {
+            "a": {
+              "emoji": "🔧",
+              "text": "Minor scratch"
+            },
+            "b": {
+              "emoji": "💥",
+              "text": "Engine failure"
+            },
+            "c": {
+              "emoji": "✨",
+              "text": "Cleaner engine"
+            },
+            "d": {
+              "emoji": "🔊",
+              "text": "Better sound"
+            }
+          },
+          "answer": "b"
+        }
+      ]
+    },
+    {
+      "title": "Jump Starting a Car",
+      "difficulty": "Medium",
+      "category": "Car Care",
+      "questions": [
+        {
+          "question": "A clicking sound when turning the key usually means:",
+          "options": {
+            "a": {
+              "emoji": "🔋",
+              "text": "Dead battery"
+            },
+            "b": {
+              "emoji": "🚗",
+              "text": "Flat tire"
+            },
+            "c": {
+              "emoji": "🛢️",
+              "text": "Oil leak"
+            },
+            "d": {
+              "emoji": "❄️",
+              "text": "AC failure"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "First cable to connect:",
+          "options": {
+            "a": {
+              "emoji": "🖤",
+              "text": "Black to dead battery"
+            },
+            "b": {
+              "emoji": "🔴",
+              "text": "Red to dead battery"
+            },
+            "c": {
+              "emoji": "🔩",
+              "text": "Black to ground"
+            },
+            "d": {
+              "emoji": "🔌",
+              "text": "Any cable"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Last cable to connect:",
+          "options": {
+            "a": {
+              "emoji": "🔴",
+              "text": "Red to good battery"
+            },
+            "b": {
+              "emoji": "🔩",
+              "text": "Black to ground"
+            },
+            "c": {
+              "emoji": "💵",
+              "text": "Red to dead battery"
+            },
+            "d": {
+              "emoji": "🖤",
+              "text": "Black to dead battery"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "You should NOT connect black cable to:",
+          "options": {
+            "a": {
+              "emoji": "🔩",
+              "text": "Metal ground"
+            },
+            "b": {
+              "emoji": "⚙️",
+              "text": "Engine block"
+            },
+            "c": {
+              "emoji": "🔋",
+              "text": "Negative terminal of dead battery"
+            },
+            "d": {
+              "emoji": "🏗️",
+              "text": "Frame"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "After starting, let car run for:",
+          "options": {
+            "a": {
+              "emoji": "⏱️",
+              "text": "30 seconds"
+            },
+            "b": {
+              "emoji": "🕐",
+              "text": "10–15 minutes"
+            },
+            "c": {
+              "emoji": "💵",
+              "text": "1 minute"
+            },
+            "d": {
+              "emoji": "🛑",
+              "text": "Turn off immediately"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Reversing cable order can cause:",
+          "options": {
+            "a": {
+              "emoji": "🤷",
+              "text": "Nothing"
+            },
+            "b": {
+              "emoji": "⚡",
+              "text": "Sparks/damage"
+            },
+            "c": {
+              "emoji": "✨",
+              "text": "Cleaner battery"
+            },
+            "d": {
+              "emoji": "💵",
+              "text": "Faster charging"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Both cars should be:",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "Touching"
+            },
+            "b": {
+              "emoji": "🔌",
+              "text": "Off before connecting"
+            },
+            "c": {
+              "emoji": "⚡",
+              "text": "Running"
+            },
+            "d": {
+              "emoji": "🚙",
+              "text": "In drive"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Corroded battery terminals look:",
+          "options": {
+            "a": {
+              "emoji": "✨",
+              "text": "Clean"
+            },
+            "b": {
+              "emoji": "🧂",
+              "text": "White/blue buildup"
+            },
+            "c": {
+              "emoji": "💫",
+              "text": "Shiny"
+            },
+            "d": {
+              "emoji": "💧",
+              "text": "Wet"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "If car dies again shortly after jump, likely issue is:",
+          "options": {
+            "a": {
+              "emoji": "⚡",
+              "text": "Alternator problem"
+            },
+            "b": {
+              "emoji": "⛽",
+              "text": "Low gas"
+            },
+            "c": {
+              "emoji": "🚗",
+              "text": "Tire pressure"
+            },
+            "d": {
+              "emoji": "❄️",
+              "text": "AC"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Safety glasses are recommended because:",
+          "options": {
+            "a": {
+              "emoji": "⚡",
+              "text": "Batteries can spark"
+            },
+            "b": {
+              "emoji": "😎",
+              "text": "For style"
+            },
+            "c": {
+              "emoji": "🏎️",
+              "text": "For speed"
+            },
+            "d": {
+              "emoji": "🧤",
+              "text": "For warmth"
+            }
+          },
+          "answer": "a"
+        }
+      ]
+    },
+    {
+      "title": "Buying & Maintaining a Used Car",
+      "difficulty": "Hard",
+      "category": "Car Care",
+      "questions": [
+        {
+          "question": "Before buying a used car, you should check:",
+          "options": {
+            "a": {
+              "emoji": "📋",
+              "text": "VIN report"
+            },
+            "b": {
+              "emoji": "🎨",
+              "text": "Car color"
+            },
+            "c": {
+              "emoji": "📻",
+              "text": "Radio brand"
+            },
+            "d": {
+              "emoji": "💺",
+              "text": "Seat design"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "High mileage usually means:",
+          "options": {
+            "a": {
+              "emoji": "🔧",
+              "text": "More wear"
+            },
+            "b": {
+              "emoji": "⚙️",
+              "text": "New engine"
+            },
+            "c": {
+              "emoji": "🤷",
+              "text": "No maintenance needed"
+            },
+            "d": {
+              "emoji": "💰",
+              "text": "Better value always"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Flood damage signs include:",
+          "options": {
+            "a": {
+              "emoji": "👃",
+              "text": "Musty smell"
+            },
+            "b": {
+              "emoji": "🟤",
+              "text": "Rust under seats"
+            },
+            "c": {
+              "emoji": "⚡",
+              "text": "Electrical issues"
+            },
+            "d": {
+              "emoji": "📋",
+              "text": "All of the above"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "Engine knocking is usually:",
+          "options": {
+            "a": {
+              "emoji": "🟢",
+              "text": "Normal"
+            },
+            "b": {
+              "emoji": "🟡",
+              "text": "Minor"
+            },
+            "c": {
+              "emoji": "🔴",
+              "text": "Serious issue"
+            },
+            "d": {
+              "emoji": "🎨",
+              "text": "Cosmetic"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Total cost of ownership includes:",
+          "options": {
+            "a": {
+              "emoji": "🛡️",
+              "text": "Insurance"
+            },
+            "b": {
+              "emoji": "📄",
+              "text": "Registration"
+            },
+            "c": {
+              "emoji": "🔧",
+              "text": "Maintenance"
+            },
+            "d": {
+              "emoji": "📋",
+              "text": "All of the above"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "Skipping maintenance lowers:",
+          "options": {
+            "a": {
+              "emoji": "💰",
+              "text": "Costs long term"
+            },
+            "b": {
+              "emoji": "📉",
+              "text": "Resale value"
+            },
+            "c": {
+              "emoji": "😰",
+              "text": "Stress"
+            },
+            "d": {
+              "emoji": "⛽",
+              "text": "Fuel usage"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "A car with full service records is:",
+          "options": {
+            "a": {
+              "emoji": "🎲",
+              "text": "Riskier"
+            },
+            "b": {
+              "emoji": "🤝",
+              "text": "More trustworthy"
+            },
+            "c": {
+              "emoji": "📉",
+              "text": "Worth less"
+            },
+            "d": {
+              "emoji": "🎭",
+              "text": "Fake"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Before buying, you should always:",
+          "options": {
+            "a": {
+              "emoji": "🤝",
+              "text": "Trust seller blindly"
+            },
+            "b": {
+              "emoji": "🚗",
+              "text": "Test drive"
+            },
+            "c": {
+              "emoji": "💳",
+              "text": "Pay immediately"
+            },
+            "d": {
+              "emoji": "🙈",
+              "text": "Skip inspection"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "A pre-purchase inspection is done by:",
+          "options": {
+            "a": {
+              "emoji": "🤷",
+              "text": "Random person"
+            },
+            "b": {
+              "emoji": "🔧",
+              "text": "Mechanic"
+            },
+            "c": {
+              "emoji": "🏘️",
+              "text": "Neighbor"
+            },
+            "d": {
+              "emoji": "💼",
+              "text": "Salesman"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Buying beyond your budget can cause:",
+          "options": {
+            "a": {
+              "emoji": "😰",
+              "text": "Financial stress"
+            },
+            "b": {
+              "emoji": "🕊️",
+              "text": "Freedom"
+            },
+            "c": {
+              "emoji": "💰",
+              "text": "Higher savings"
+            },
+            "d": {
+              "emoji": "📉",
+              "text": "Lower insurance"
+            }
+          },
+          "answer": "a"
+        }
+      ]
+    },
+    {
+      "title": "Budgeting & Spending Habits",
+      "difficulty": "Easy",
+      "category": "Finances",
+      "questions": [
+        {
+          "question": "According to the 50/30/20 rule, which category should 50% of your net income go toward?",
+          "options": {
+            "a": {
+              "emoji": "💰",
+              "text": "Savings and Investments"
+            },
+            "b": {
+              "emoji": "🏠",
+              "text": "Needs and Essentials"
+            },
+            "c": {
+              "emoji": "💅",
+              "text": "Wants and Luxury Items"
+            },
+            "d": {
+              "emoji": "💳",
+              "text": "Debt Repayment"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which of the following is considered a \"Fixed Expense\"?",
+          "options": {
+            "a": {
+              "emoji": "🍽️",
+              "text": "Dining out at a restaurant"
+            },
+            "b": {
+              "emoji": "🎮",
+              "text": "Buying a new video game"
+            },
+            "c": {
+              "emoji": "🏠",
+              "text": "Monthly Rent"
+            },
+            "d": {
+              "emoji": "✈️",
+              "text": "Weekend travel"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is the primary purpose of tracking your expenses?",
+          "options": {
+            "a": {
+              "emoji": "🚫",
+              "text": "To make sure you never spend any money"
+            },
+            "b": {
+              "emoji": "😂",
+              "text": "To impress your bank manager"
+            },
+            "c": {
+              "emoji": "🔍",
+              "text": "To identify where your money is going and find waste"
+            },
+            "d": {
+              "emoji": "📈",
+              "text": "To increase your credit score immediately"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "You buy a $5 coffee every morning before work. In budgeting terms, this is technically a:",
+          "options": {
+            "a": {
+              "emoji": "☕",
+              "text": "Want (Discretionary)"
+            },
+            "b": {
+              "emoji": "🏠",
+              "text": "Need (Survival)"
+            },
+            "c": {
+              "emoji": "📋",
+              "text": "Fixed Expense"
+            },
+            "d": {
+              "emoji": "📄",
+              "text": "Tax Deduction"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "What does \"Net Income\" mean?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "The total salary you are promised before taxes"
+            },
+            "b": {
+              "emoji": "🏦",
+              "text": "The amount of money that actually hits your bank account after taxes"
+            },
+            "c": {
+              "emoji": "🎨",
+              "text": "The money you earn from hobbies only"
+            },
+            "d": {
+              "emoji": "💳",
+              "text": "Your total credit card limit"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What does the strategy \"Pay Yourself First\" mean?",
+          "options": {
+            "a": {
+              "emoji": "🎁",
+              "text": "Buying yourself a gift before paying rent"
+            },
+            "b": {
+              "emoji": "💳",
+              "text": "Paying off your credit card before your car loan"
+            },
+            "c": {
+              "emoji": "👔",
+              "text": "Asking your boss for an advance"
+            },
+            "d": {
+              "emoji": "💰",
+              "text": "Setting aside savings from your paycheck before spending on anything else"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "True or False: A gym membership is always considered a \"Need\" because it relates to health.",
+          "options": {
+            "a": {
+              "emoji": "☑️",
+              "text": "True"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "False"
+            },
+            "c": {
+              "emoji": "",
+              "text": ""
+            },
+            "d": {
+              "emoji": "",
+              "text": ""
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which tool is most commonly used to organize a modern budget?",
+          "options": {
+            "a": {
+              "emoji": "📒",
+              "text": "A Checkbook Register"
+            },
+            "b": {
+              "emoji": "📄",
+              "text": "A Word Document"
+            },
+            "c": {
+              "emoji": "📊",
+              "text": "A Spreadsheet or App"
+            },
+            "d": {
+              "emoji": "📅",
+              "text": "A Calendar"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "If your take-home pay is $3,000 a month, how much should you aim to save (20%) according to the 50/30/20 rule?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "$300"
+            },
+            "b": {
+              "emoji": "💴",
+              "text": "$600"
+            },
+            "c": {
+              "emoji": "💶",
+              "text": "$1,000"
+            },
+            "d": {
+              "emoji": "💷",
+              "text": "$1,500"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is \"Lifestyle Creep\"?",
+          "options": {
+            "a": {
+              "emoji": "🏠",
+              "text": "When your rent increases every year"
+            },
+            "b": {
+              "emoji": "📈",
+              "text": "When you spend more money as soon as you start earning more money"
+            },
+            "c": {
+              "emoji": "📉",
+              "text": "When you downgrade your lifestyle to save money"
+            },
+            "d": {
+              "emoji": "🏙️",
+              "text": "Moving to a more expensive city"
+            }
+          },
+          "answer": "b"
+        }
+      ]
+    },
+    {
+      "title": "Banking & Emergency Funds",
+      "difficulty": "Easy",
+      "category": "Finances",
+      "questions": [
+        {
+          "question": "What is the main difference between a Checking Account and a Savings Account?",
+          "options": {
+            "a": {
+              "emoji": "🛍️",
+              "text": "Savings accounts come with debit cards for shopping"
+            },
+            "b": {
+              "emoji": "📈",
+              "text": "Checking accounts pay high interest"
+            },
+            "c": {
+              "emoji": "🏦",
+              "text": "Checking is for daily spending; Savings is for storing money long-term"
+            },
+            "d": {
+              "emoji": "🤷",
+              "text": "There is no difference"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What does HYSA stand for?",
+          "options": {
+            "a": {
+              "emoji": "💸",
+              "text": "High Yearly Spending Allowance"
+            },
+            "b": {
+              "emoji": "📈",
+              "text": "High-Yield Savings Account"
+            },
+            "c": {
+              "emoji": "🏠",
+              "text": "Home Yield Security Account"
+            },
+            "d": {
+              "emoji": "💼",
+              "text": "Hourly Yearly Salary Adjustment"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Why is a High-Yield Savings Account (HYSA) usually better than a traditional savings account at a big bank?",
+          "options": {
+            "a": {
+              "emoji": "📝",
+              "text": "It allows you to write checks"
+            },
+            "b": {
+              "emoji": "🏦",
+              "text": "It is located in physical bank branches"
+            },
+            "c": {
+              "emoji": "📈",
+              "text": "It has a much higher interest rate (APY), so your money grows faster"
+            },
+            "d": {
+              "emoji": "🔓",
+              "text": "It never requires a password"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "How much money should generally be in your Emergency Fund?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "$100"
+            },
+            "b": {
+              "emoji": "📅",
+              "text": "1 month of income"
+            },
+            "c": {
+              "emoji": "🏦",
+              "text": "3 to 6 months of essential living expenses"
+            },
+            "d": {
+              "emoji": "🗓️",
+              "text": "1 year of salary"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which of these is a valid reason to use your Emergency Fund?",
+          "options": {
+            "a": {
+              "emoji": "🚗",
+              "text": "A sudden car repair needed to get to work"
+            },
+            "b": {
+              "emoji": "👠",
+              "text": "A flash sale on designer shoes"
+            },
+            "c": {
+              "emoji": "✈️",
+              "text": "Paying for a vacation you forgot to budget for"
+            },
+            "d": {
+              "emoji": "🎁",
+              "text": "Buying birthday gifts"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "What is \"Overdraft Protection\"?",
+          "options": {
+            "a": {
+              "emoji": "🛑",
+              "text": "A service that stops you from spending money"
+            },
+            "b": {
+              "emoji": "🏦",
+              "text": "A bank service that covers transactions if your balance is zero (often for a fee)"
+            },
+            "c": {
+              "emoji": "🔒",
+              "text": "Insurance against bank robbery"
+            },
+            "d": {
+              "emoji": "🎉",
+              "text": "A bonus paid by the bank"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is \"Compound Interest\"?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "Interest calculated only on the money you deposited"
+            },
+            "b": {
+              "emoji": "💸",
+              "text": "A fee the bank charges you for saving"
+            },
+            "c": {
+              "emoji": "📉",
+              "text": "Interest that decreases over time"
+            },
+            "d": {
+              "emoji": "📈",
+              "text": "Interest calculated on your principal plus the interest you've already earned"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "True or False: You should keep your Emergency Fund in the same checking account linked to your debit card.",
+          "options": {
+            "a": {
+              "emoji": "☑️",
+              "text": "True"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "False"
+            },
+            "c": {
+              "emoji": "",
+              "text": ""
+            },
+            "d": {
+              "emoji": "",
+              "text": ""
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "If a bank offers an APY of 4.0%, and you deposit $100, how much will you have after one year (assuming no other deposits)?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "$140"
+            },
+            "b": {
+              "emoji": "💴",
+              "text": "$104"
+            },
+            "c": {
+              "emoji": "💶",
+              "text": "$100.40"
+            },
+            "d": {
+              "emoji": "💷",
+              "text": "$400"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Which institution insures your bank deposits up to $250,000?",
+          "options": {
+            "a": {
+              "emoji": "🏛️",
+              "text": "IRS (Internal Revenue Service)"
+            },
+            "b": {
+              "emoji": "🕵️",
+              "text": "FBI (Federal Bureau of Investigation)"
+            },
+            "c": {
+              "emoji": "🔐",
+              "text": "CIA (Central Intelligence Agency)"
+            },
+            "d": {
+              "emoji": "🏦",
+              "text": "FDIC (Federal Deposit Insurance Corporation)"
+            }
+          },
+          "answer": "d"
+        }
+      ]
+    },
+    {
+      "title": "Credit & Debt Management",
+      "difficulty": "Medium",
+      "category": "Finances",
+      "questions": [
+        {
+          "question": "Which factor has the biggest impact (35%) on your FICO credit score?",
+          "options": {
+            "a": {
+              "emoji": "📅",
+              "text": "Length of credit history"
+            },
+            "b": {
+              "emoji": "🔍",
+              "text": "New credit inquiries"
+            },
+            "c": {
+              "emoji": "💵",
+              "text": "Payment History (Paying on time)"
+            },
+            "d": {
+              "emoji": "🃏",
+              "text": "Credit Mix"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is the \"Debt Snowball\" method?",
+          "options": {
+            "a": {
+              "emoji": "📈",
+              "text": "Paying off the loan with the highest interest rate first"
+            },
+            "b": {
+              "emoji": "🏔️",
+              "text": "Paying off the loan with the lowest balance first to build momentum"
+            },
+            "c": {
+              "emoji": "🔄",
+              "text": "Consolidating all debt into one big loan"
+            },
+            "d": {
+              "emoji": "💳",
+              "text": "Paying only the minimums on everything"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is the \"Debt Avalanche\" method?",
+          "options": {
+            "a": {
+              "emoji": "📈",
+              "text": "Paying off the loan with the highest interest rate first"
+            },
+            "b": {
+              "emoji": "📉",
+              "text": "Paying off the smallest loan first"
+            },
+            "c": {
+              "emoji": "👪",
+              "text": "Asking your parents to pay your debt"
+            },
+            "d": {
+              "emoji": "📋",
+              "text": "Filing for bankruptcy"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "To maintain a good credit score, you should generally keep your Credit Utilization Ratio below:",
+          "options": {
+            "a": {
+              "emoji": "💯",
+              "text": "100%"
+            },
+            "b": {
+              "emoji": "📊",
+              "text": "75%"
+            },
+            "c": {
+              "emoji": "📉",
+              "text": "50%"
+            },
+            "d": {
+              "emoji": "💳",
+              "text": "30%"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "You have an old credit card you haven't used in years. Why might closing it hurt your credit score?",
+          "options": {
+            "a": {
+              "emoji": "😡",
+              "text": "It angers the bank"
+            },
+            "b": {
+              "emoji": "📉",
+              "text": "It reduces your \"Length of Credit History\" and your total available credit limit"
+            },
+            "c": {
+              "emoji": "📈",
+              "text": "It increases your interest rate on other cards"
+            },
+            "d": {
+              "emoji": "🏛️",
+              "text": "Closing cards is illegal"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is a \"Hard Inquiry\" on your credit report?",
+          "options": {
+            "a": {
+              "emoji": "🏦",
+              "text": "When a lender checks your credit to approve a new loan or card"
+            },
+            "b": {
+              "emoji": "🔍",
+              "text": "When you check your own score"
+            },
+            "c": {
+              "emoji": "💳",
+              "text": "When you pay off a loan"
+            },
+            "d": {
+              "emoji": "💼",
+              "text": "When you get a raise at work"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Which of these is considered \"Revolving Credit\"?",
+          "options": {
+            "a": {
+              "emoji": "📚",
+              "text": "Student Loan"
+            },
+            "b": {
+              "emoji": "🏠",
+              "text": "Mortgage"
+            },
+            "c": {
+              "emoji": "💳",
+              "text": "Credit Card"
+            },
+            "d": {
+              "emoji": "🚗",
+              "text": "Auto Loan"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "If you carry a balance on your credit card from month to month, what happens?",
+          "options": {
+            "a": {
+              "emoji": "📊",
+              "text": "Your credit score automatically goes to 850"
+            },
+            "b": {
+              "emoji": "🙏",
+              "text": "The bank forgives the debt"
+            },
+            "c": {
+              "emoji": "💸",
+              "text": "You are charged interest on the remaining balance"
+            },
+            "d": {
+              "emoji": "🎁",
+              "text": "You get cash back rewards"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is a \"Secured Credit Card\"?",
+          "options": {
+            "a": {
+              "emoji": "🔒",
+              "text": "A card locked in a safe"
+            },
+            "b": {
+              "emoji": "💳",
+              "text": "A card that requires a cash deposit upfront, used to build credit"
+            },
+            "c": {
+              "emoji": "💰",
+              "text": "A card with a $1 million limit"
+            },
+            "d": {
+              "emoji": "🏛️",
+              "text": "A card only for government employees"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "Approximately what FICO score is considered \"Good\" to \"Very Good\"?",
+          "options": {
+            "a": {
+              "emoji": "📊",
+              "text": "300-500"
+            },
+            "b": {
+              "emoji": "📉",
+              "text": "500-600"
+            },
+            "c": {
+              "emoji": "📈",
+              "text": "670-740"
+            },
+            "d": {
+              "emoji": "🚀",
+              "text": "1000+"
+            }
+          },
+          "answer": "c"
+        }
+      ]
+    },
+    {
+      "title": "Taxes & Income",
+      "difficulty": "Medium",
+      "category": "Finances",
+      "questions": [
+        {
+          "question": "What is the difference between a Tax Deduction and a Tax Credit?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "A Credit lowers your taxable income; a Deduction lowers your tax bill dollar-for-dollar"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "A Deduction lowers your taxable income; a Credit lowers your tax bill dollar-for-dollar"
+            },
+            "c": {
+              "emoji": "🤷",
+              "text": "They are the same thing"
+            },
+            "d": {
+              "emoji": "⚖️",
+              "text": "A Deduction is for the rich, a Credit is for the poor"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "If you are in the 22% tax bracket, does all of your income get taxed at 22%?",
+          "options": {
+            "a": {
+              "emoji": "💸",
+              "text": "Yes, every dollar is taxed at 22%"
+            },
+            "b": {
+              "emoji": "🎁",
+              "text": "No, only your bonuses are taxed at 22%"
+            },
+            "c": {
+              "emoji": "🎂",
+              "text": "It depends on your age"
+            },
+            "d": {
+              "emoji": "📊",
+              "text": "No, only the income above the threshold for that bracket is taxed at 22%"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "What is the form you receive from your employer at the end of the year showing your total salary and taxes withheld?",
+          "options": {
+            "a": {
+              "emoji": "📄",
+              "text": "W-2"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "1040"
+            },
+            "c": {
+              "emoji": "📝",
+              "text": "W-4"
+            },
+            "d": {
+              "emoji": "🗂️",
+              "text": "1099"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "If you are a freelancer or \"gig worker\" (like Uber or DoorDash), which form will you likely receive to report your income?",
+          "options": {
+            "a": {
+              "emoji": "📄",
+              "text": "W-2"
+            },
+            "b": {
+              "emoji": "💵",
+              "text": "I-9"
+            },
+            "c": {
+              "emoji": "🗂️",
+              "text": "1099-NEC or 1099-K"
+            },
+            "d": {
+              "emoji": "📝",
+              "text": "W-4"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "For the 2025 tax year, the Standard Deduction for a single filer is approximately:",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "$5,000"
+            },
+            "b": {
+              "emoji": "💴",
+              "text": "$15,000 - $15,750"
+            },
+            "c": {
+              "emoji": "💶",
+              "text": "$25,000"
+            },
+            "d": {
+              "emoji": "💷",
+              "text": "$50,000"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "When you start a new job, you fill out a W-4 form. What is its purpose?",
+          "options": {
+            "a": {
+              "emoji": "📝",
+              "text": "To tell your employer how much tax to withhold from your paycheck"
+            },
+            "b": {
+              "emoji": "💰",
+              "text": "To register for a 401k"
+            },
+            "c": {
+              "emoji": "🏥",
+              "text": "To apply for health insurance"
+            },
+            "d": {
+              "emoji": "🔍",
+              "text": "To background check you"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Which date is the typical deadline for filing federal income taxes in the US?",
+          "options": {
+            "a": {
+              "emoji": "🎆",
+              "text": "January 1st"
+            },
+            "b": {
+              "emoji": "🗓️",
+              "text": "April 15th"
+            },
+            "c": {
+              "emoji": "🎇",
+              "text": "July 4th"
+            },
+            "d": {
+              "emoji": "🎉",
+              "text": "December 31st"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "True or False: If you get a tax refund, it means you paid too much in taxes during the year and the government is paying you back.",
+          "options": {
+            "a": {
+              "emoji": "☑️",
+              "text": "True"
+            },
+            "b": {
+              "emoji": "📋",
+              "text": "False"
+            },
+            "c": {
+              "emoji": "",
+              "text": ""
+            },
+            "d": {
+              "emoji": "",
+              "text": ""
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "In some states (like Idaho), you can get a \"Grocery Credit\" refund...",
+          "options": {
+            "a": {
+              "emoji": "💰",
+              "text": "Only if you are a millionaire"
+            },
+            "b": {
+              "emoji": "🌾",
+              "text": "Only if you own a farm"
+            },
+            "c": {
+              "emoji": "🛒",
+              "text": "Even if you don't earn enough money to file taxes"
+            },
+            "d": {
+              "emoji": "🥦",
+              "text": "Only if you eat vegetables"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which of these is usually withheld from your paycheck automatically (FICA taxes)?",
+          "options": {
+            "a": {
+              "emoji": "🏠",
+              "text": "Rent and Utilities"
+            },
+            "b": {
+              "emoji": "🏛️",
+              "text": "Social Security and Medicare"
+            },
+            "c": {
+              "emoji": "💳",
+              "text": "Credit Card payments"
+            },
+            "d": {
+              "emoji": "📚",
+              "text": "Student Loan payments"
+            }
+          },
+          "answer": "b"
+        }
+      ]
+    },
+    {
+      "title": "Investing & Future Planning",
+      "difficulty": "Hard",
+      "category": "Finances",
+      "questions": [
+        {
+          "question": "Employer 401(k) Matching is best described as:",
+          "options": {
+            "a": {
+              "emoji": "🎭",
+              "text": "A scam to keep your money"
+            },
+            "b": {
+              "emoji": "📊",
+              "text": "A high-risk stock trade"
+            },
+            "c": {
+              "emoji": "💰",
+              "text": "A guaranteed 100% return on your investment (Free Money)"
+            },
+            "d": {
+              "emoji": "💸",
+              "text": "A fee you pay to work there"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is the primary tax benefit of a Roth IRA?",
+          "options": {
+            "a": {
+              "emoji": "📋",
+              "text": "You get a tax deduction now, but pay taxes when you withdraw"
+            },
+            "b": {
+              "emoji": "🙅",
+              "text": "You never pay taxes on it ever"
+            },
+            "c": {
+              "emoji": "🌱",
+              "text": "You pay taxes now, but all growth and withdrawals in retirement are 100% tax-free"
+            },
+            "d": {
+              "emoji": "🏛️",
+              "text": "The government matches your contribution"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which investment vehicle typically trades like a stock throughout the day and has low expense ratios?",
+          "options": {
+            "a": {
+              "emoji": "📊",
+              "text": "Mutual Fund"
+            },
+            "b": {
+              "emoji": "🏦",
+              "text": "CD (Certificate of Deposit)"
+            },
+            "c": {
+              "emoji": "📜",
+              "text": "Bond"
+            },
+            "d": {
+              "emoji": "📈",
+              "text": "ETF (Exchange Traded Fund)"
+            }
+          },
+          "answer": "d"
+        },
+        {
+          "question": "For 2025, what is the annual contribution limit for a Roth IRA (for those under 50)?",
+          "options": {
+            "a": {
+              "emoji": "💵",
+              "text": "$6,000"
+            },
+            "b": {
+              "emoji": "💴",
+              "text": "$7,000"
+            },
+            "c": {
+              "emoji": "💶",
+              "text": "$23,500"
+            },
+            "d": {
+              "emoji": "💷",
+              "text": "$100,000"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is an \"Index Fund\"?",
+          "options": {
+            "a": {
+              "emoji": "📊",
+              "text": "A fund that passively tracks a market list (like the S&P 500)"
+            },
+            "b": {
+              "emoji": "👤",
+              "text": "A fund managed by a person who tries to pick winning stocks"
+            },
+            "c": {
+              "emoji": "💻",
+              "text": "A fund that only invests in tech companies"
+            },
+            "d": {
+              "emoji": "🏦",
+              "text": "A savings account"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "If you withdraw money from a traditional 401(k) before age 59½, what usually happens?",
+          "options": {
+            "a": {
+              "emoji": "🤷",
+              "text": "Nothing"
+            },
+            "b": {
+              "emoji": "🎁",
+              "text": "You get a bonus"
+            },
+            "c": {
+              "emoji": "💸",
+              "text": "You pay income tax PLUS a 10% penalty"
+            },
+            "d": {
+              "emoji": "📉",
+              "text": "You lose all the money"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "What is the \"Rule of 72\"?",
+          "options": {
+            "a": {
+              "emoji": "🧮",
+              "text": "A math trick to estimate how many years it takes for your investment to double"
+            },
+            "b": {
+              "emoji": "🎂",
+              "text": "A rule that you must retire at age 72"
+            },
+            "c": {
+              "emoji": "📋",
+              "text": "A tax law regarding 72 types of income"
+            },
+            "d": {
+              "emoji": "💰",
+              "text": "You should save 72% of your income"
+            }
+          },
+          "answer": "a"
+        },
+        {
+          "question": "Why is \"Time in the Market\" generally better than \"Timing the Market\"?",
+          "options": {
+            "a": {
+              "emoji": "🔮",
+              "text": "Because you can predict the future if you wait long enough"
+            },
+            "b": {
+              "emoji": "📅",
+              "text": "Because stocks only go up on Tuesdays"
+            },
+            "c": {
+              "emoji": "📈",
+              "text": "Because compound interest needs time to work exponentially"
+            },
+            "d": {
+              "emoji": "⏱️",
+              "text": "It's not, timing is better"
+            }
+          },
+          "answer": "c"
+        },
+        {
+          "question": "Which of these has historically provided the highest return over long periods (20+ years)?",
+          "options": {
+            "a": {
+              "emoji": "🛏️",
+              "text": "Cash under a mattress"
+            },
+            "b": {
+              "emoji": "📈",
+              "text": "The Stock Market (S&P 500)"
+            },
+            "c": {
+              "emoji": "🥇",
+              "text": "Gold"
+            },
+            "d": {
+              "emoji": "🏦",
+              "text": "Savings Accounts"
+            }
+          },
+          "answer": "b"
+        },
+        {
+          "question": "What is a \"Target Date Fund\"?",
+          "options": {
+            "a": {
+              "emoji": "💒",
+              "text": "A fund that helps you save for a wedding"
+            },
+            "b": {
+              "emoji": "📉",
+              "text": "An investment fund that automatically becomes safer as you get closer to retirement"
+            },
+            "c": {
+              "emoji": "📅",
+              "text": "A fund that guarantees you retire on a specific date"
+            },
+            "d": {
+              "emoji": "🗓️",
+              "text": "A calendar app"
+            }
+          },
+          "answer": "b"
         }
       ]
     }
