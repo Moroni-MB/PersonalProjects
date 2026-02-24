@@ -12,9 +12,11 @@ const button = document.getElementById("generate") as HTMLButtonElement;
 button.addEventListener("click", () => {
   const goal = goalSelect.value as Goal;
   const days = parseInt(daysInput.value);
-  const equipment: Equipment[] = Array.from(
-    document.querySelectorAll('input[name="equipment"]:checked')
-  ).map((cb) => (cb as HTMLInputElement).value as Equipment);
+
+  const equipment = equipmentInput.value
+    .split(",")
+    .map(e => e.trim().toLowerCase())
+    .filter(e => e !== "") as Equipment[];
 
   try {
     const workout = generateWorkoutPlan(goal, days, equipment);

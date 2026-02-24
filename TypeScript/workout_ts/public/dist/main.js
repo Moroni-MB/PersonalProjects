@@ -8,7 +8,10 @@ const button = document.getElementById("generate");
 button.addEventListener("click", () => {
     const goal = goalSelect.value;
     const days = parseInt(daysInput.value);
-    const equipment = Array.from(document.querySelectorAll('input[name="equipment"]:checked')).map((cb) => cb.value);
+    const equipment = equipmentInput.value
+        .split(",")
+        .map(e => e.trim().toLowerCase())
+        .filter(e => e !== "");
     try {
         const workout = generateWorkoutPlan(goal, days, equipment);
         renderWorkout(workout);
