@@ -8,16 +8,25 @@ const button = document.getElementById("generate");
 button.addEventListener("click", () => {
     const goal = goalSelect.value;
     const days = parseInt(daysInput.value);
-    const equipment = equipmentInput.value.split(",");
-    const workout = generateWorkoutPlan(goal, days, equipment);
-    renderWorkout(workout);
+    const equipment = Array.from(document.querySelectorAll('input[name="equipment"]:checked')).map((cb) => cb.value);
+    try {
+        const workout = generateWorkoutPlan(goal, days, equipment);
+        renderWorkout(workout);
+    }
+    catch (error) {
+        if (error instanceof Error) {
+            output.innerHTML = `<p style="color:red; font-weight:bold;">
+        ⚠ ${error.message}
+      </p>`;
+        }
+    }
 });
 function renderWorkout(workout) {
     output.innerHTML = "";
     const title = document.createElement("h2");
     title.textContent = `${workout.goal.toUpperCase()} PROGRAM`;
     output.appendChild(title);
-    // Define colors for muscle groups (fallback for unknown groups)
+    // Define colors for muscle groups
     const muscleColors = {
         chest: "#ef4444",
         back: "#3b82f6",
@@ -38,7 +47,8 @@ function renderWorkout(workout) {
         day.exercises.forEach((exercise) => {
             const item = document.createElement("li");
             // Exercise text
-            item.textContent = `${exercise.name} — ${exercise.sets}x${exercise.reps} `;
+            const [sets, reps] = exercise.setRep;
+            item.textContent = `${exercise.name} — ${sets}x${reps} `;
             // Muscle group badge
             const muscleSpan = document.createElement("span");
             muscleSpan.textContent = exercise.muscleGroup.toUpperCase();

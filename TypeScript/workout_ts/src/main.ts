@@ -12,11 +12,20 @@ const button = document.getElementById("generate") as HTMLButtonElement;
 button.addEventListener("click", () => {
   const goal = goalSelect.value as Goal;
   const days = parseInt(daysInput.value);
-  const equipment = equipmentInput.value.split(",") as Equipment[];
+  const equipment: Equipment[] = Array.from(
+    document.querySelectorAll('input[name="equipment"]:checked')
+  ).map((cb) => (cb as HTMLInputElement).value as Equipment);
 
-  const workout = generateWorkoutPlan(goal, days, equipment);
-
-  renderWorkout(workout);
+  try {
+    const workout = generateWorkoutPlan(goal, days, equipment);
+    renderWorkout(workout);
+  } catch (error) {
+    if (error instanceof Error) {
+      output.innerHTML = `<p style="color:red; font-weight:bold;">
+        ⚠ ${error.message}
+      </p>`;
+    }
+  }
 });
 
 function renderWorkout(workout: any) {
@@ -52,7 +61,8 @@ function renderWorkout(workout: any) {
       const item = document.createElement("li");
 
       // Exercise text
-      item.textContent = `${exercise.name} — ${exercise.sets}x${exercise.reps} `;
+      const [sets, reps] = exercise.setRep;
+      item.textContent = `${exercise.name} — ${sets}x${reps} `;
 
       // Muscle group badge
       const muscleSpan = document.createElement("span");

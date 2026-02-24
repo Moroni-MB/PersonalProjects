@@ -1,12 +1,23 @@
-import { Goal, Equipment, WorkoutPlan, WorkoutDay } from "../types/workout.js";
+import {
+  Goal,
+  Equipment,
+  WorkoutPlan,
+  WorkoutDay,
+  WorkoutExercise,
+} from "../types/workout.js";
 import { exerciseLibrary } from "../data/exercises.js";
 
 function filterExercisesByEquipment(equipment: Equipment[]) {
-  return exerciseLibrary.filter(ex => equipment.includes(ex.equipment));
+  return exerciseLibrary.filter((ex) => equipment.includes(ex.equipment));
 }
 
 function getRandomExercises(count: number, equipment: Equipment[]) {
   const filtered = filterExercisesByEquipment(equipment);
+
+  if (filtered.length === 0) {
+    throw new Error("No exercises available for selected equipment.");
+  }
+
   const shuffled = [...filtered].sort(() => 0.5 - Math.random());
   return shuffled.slice(0, count);
 }
@@ -16,11 +27,22 @@ export function generateWorkoutPlan(
   daysPerWeek: number,
   equipment: Equipment[]
 ): WorkoutPlan {
+  console.log("Equipment:", equipment);
+  if (!Number.isInteger(daysPerWeek) || daysPerWeek <= 0) {
+    throw new Error("Days per week must be greater than 0.");
+  }
 
+  if (equipment.length == 0) {
+    throw new Error("Please select at least one type of equipment.");
+  }
   const workouts: WorkoutDay[] = [];
 
   for (let i = 1; i <= daysPerWeek; i++) {
-    const selectedExercises = getRandomExercises(3, equipment).map(ex => {
+    // ✅ Explicitly type this as WorkoutExercise[]
+    const selectedExercises: WorkoutExercise[] = getRandomExercises(
+      3,
+      equipment
+    ).map((ex) => {
       let sets = 3;
       let reps = 10;
 
@@ -37,22 +59,15 @@ export function generateWorkoutPlan(
 
       return {
         ...ex,
-        sets,
-        reps
+        setRep: [sets, reps],
       };
     });
 
     workouts.push({
       day: `Day ${i}`,
-      exercises: selectedExercises
+      exercises: selectedExercises,
     });
   }
 
-  // Return workout plan with each workout
-  return {
-    id: Date.now().toString(),
-    goal,
-    daysPerWeek,
-    workouts
-  };
+  return new WorkoutPlan(Date.now().toString(), goal, daysPerWeek, workouts);
 }
