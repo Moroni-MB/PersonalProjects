@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import '../models/lesson_item.dart';
+import '../pages/car_maintenance_lesson.dart';
+import '../pages/quiz_page.dart';
 
 class CategorySection extends StatelessWidget {
   final String title;
@@ -151,7 +153,16 @@ class _LessonTileState extends State<_LessonTile> {
                     width: double.infinity,
                     child: ElevatedButton(
                       onPressed: () {
-                        Navigator.pushNamed(context, '/quiz');
+                        if (widget.lesson.routeName != null) {
+                          Navigator.pushNamed(context, widget.lesson.routeName!);
+                        } else {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => QuizPage(lesson: widget.lesson),
+                            ),
+                          );
+                        }
                       },
                       child: const Text("Start"),
                     ),

@@ -1,8 +1,14 @@
 import 'package:flutter/material.dart';
 import '../widgets/option_card.dart';
+import '../models/lesson_item.dart';
 
 class QuizPage extends StatefulWidget {
-  const QuizPage({super.key});
+  final LessonItem lesson; // 👈 added
+
+  const QuizPage({
+    super.key,
+    required this.lesson, // 👈 added
+  });
 
   @override
   State<QuizPage> createState() => _QuizPageState();
@@ -13,18 +19,20 @@ class _QuizPageState extends State<QuizPage> {
 
   void _handleOptionSelected() {
     setState(() {
-      //ADD LOGIC 
-      progressValue += 0.25; 
+      // ADD LOGIC 
+      progressValue += 0.25;
       if (progressValue > 1.0) {
         progressValue = 1.0;
       }
     });
-    
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar( // 👈 optional but recommended
+        title: Text(widget.lesson.title),
+      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
@@ -110,7 +118,8 @@ class _QuizPageState extends State<QuizPage> {
                 child: ElevatedButton(
                   onPressed: _handleOptionSelected,
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(255, 241, 73, 40),
+                    backgroundColor:
+                        const Color.fromARGB(255, 241, 73, 40),
                     foregroundColor: Colors.white,
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(16),

@@ -183,6 +183,34 @@ class HomePage extends StatelessWidget {
               ],
             ),
 
+            CategorySection(
+              title: "Car Care",
+              titleColor: Colors.blue,
+              lessons: [
+                LessonItem(
+                  title: "Check Tire Pressure",
+                  description: "Learn how to check and maintain proper tire pressure.",
+                  difficulty: "Easy",
+                  duration: "3 min",
+                  routeName: '/car-maintenance',
+                ),
+                LessonItem(
+                  title: "Change Engine Oil",
+                  description: "Understand when and how to change engine oil.",
+                  difficulty: "Medium",
+                  duration: "7 min",
+                  routeName: '/car-maintenance',
+                ),
+                LessonItem(
+                  title: "Replace Windshield Wipers",
+                  description: "Step-by-step guide to replacing wiper blades.",
+                  difficulty: "Easy",
+                  duration: "4 min",
+                  routeName: '/car-maintenance',
+                ),
+              ],
+            ),
+
             const SizedBox(height: 40),
           ],
         ),

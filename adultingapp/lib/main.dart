@@ -2,11 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
-
 import 'auth/auth_wrapper.dart';
 import 'pages/home_page.dart';
 import 'pages/quiz_page.dart';
 import 'pages/completed_page.dart';
+import 'pages/car_maintenance_lesson.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -30,14 +30,15 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         ),
 
+        initialRoute: '/',
+
         // 🔥 Named Routes (scalable)
         routes: {
+          '/': (_) => const AuthWrapper(),
           '/home': (_) => const MyHomePage(),
-          '/quiz': (_) => const QuizPage(),
           '/completed': (_) => const CompletedPage(),
+          '/car-maintenance': (_) => const CarMaintenanceLessonPage(),
         },
-
-        home: const AuthWrapper(),
       ),
     );
   }
