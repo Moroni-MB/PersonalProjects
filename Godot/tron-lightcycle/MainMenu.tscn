@@ -1,0 +1,49 @@
+[gd_scene format=3 uid="uid://b101ha8nyv2m6"]
+
+[ext_resource type="Script" uid="uid://dcymlogq2s6ay" path="res://main_menu.gd" id="1_i26rj"]
+
+[node name="MainMenu" type="Node2D" unique_id=759378082]
+
+[node name="Control" type="Control" parent="." unique_id=1441263450]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_i26rj")
+
+[node name="Panel" type="Panel" parent="Control" unique_id=1647056006]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1113.0
+offset_bottom = 598.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=353756841]
+layout_mode = 0
+offset_left = 476.0
+offset_top = 205.0
+offset_right = 676.0
+offset_bottom = 408.0
+theme_override_constants/separation = 40
+alignment = 1
+
+[node name="GameTitle" type="Label" parent="Control/VBoxContainer" unique_id=1528212477]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_font_sizes/font_size = 30
+text = "Tron Lighcycle"
+horizontal_alignment = 1
+
+[node name="PlayButton" type="Button" parent="Control/VBoxContainer" unique_id=2035787938]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+text = "Start Game"
+
+[node name="ColorSelectButton" type="OptionButton" parent="Control/VBoxContainer" unique_id=342661107]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+
+[connection signal="pressed" from="Control/VBoxContainer/PlayButton" to="Control" method="_on_play_button_pressed"]

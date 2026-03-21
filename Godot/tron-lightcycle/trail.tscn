@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://cko5rvrvvbwut"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_at0vl"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_at0vl"]
+
+[node name="Trail" type="StaticBody2D" unique_id=1984380627 groups=["trail"]]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1741222025]
+material = SubResource("CanvasItemMaterial_at0vl")
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=573556851]
+shape = SubResource("RectangleShape2D_at0vl")

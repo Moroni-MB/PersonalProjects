@@ -1,0 +1,161 @@
+[gd_scene format=3 uid="uid://bokgob5cqgx12"]
+
+[ext_resource type="Texture2D" uid="uid://jslr7tas1i0r" path="res://background_2.jpg" id="1_1bvp3"]
+[ext_resource type="Script" uid="uid://dvgxbbl6vi78k" path="res://player.gd" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://c68oodoo5fjhv" path="res://enemy.gd" id="2_h2yge"]
+[ext_resource type="Texture2D" uid="uid://dcmngwhpu5gfk" path="res://TRON.png" id="2_lquwl"]
+[ext_resource type="Script" uid="uid://c4nrcw15lubam" path="res://game_manager.gd" id="3_1bvp3"]
+[ext_resource type="AudioStream" uid="uid://fi75h1vqxbae" path="res://sounds/engine.mp3" id="4_272bh"]
+[ext_resource type="AudioStream" uid="uid://doko1mf26qh7b" path="res://sounds/battle.mp3" id="6_7mycd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+
+[sub_resource type="Environment" id="Environment_h2yge"]
+glow_enabled = true
+glow_levels/1 = 1.0
+glow_levels/2 = 1.0
+glow_levels/3 = 1.0
+glow_levels/4 = 1.0
+glow_intensity = 1.5
+glow_bloom = 0.4
+
+[sub_resource type="LabelSettings" id="LabelSettings_1bvp3"]
+font_size = 35
+
+[node name="Game" type="Node2D" unique_id=777031060]
+
+[node name="Background" type="TextureRect" parent="." unique_id=596821636]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1.0
+offset_top = -3.0
+offset_right = 1150.0
+offset_bottom = 639.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_1bvp3")
+
+[node name="Label" type="TextureRect" parent="Background" unique_id=1433936071]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -143.73096
+offset_top = 7.0
+offset_right = 143.73096
+offset_bottom = 74.0
+grow_horizontal = 2
+texture = ExtResource("2_lquwl")
+expand_mode = 1
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=2051018399]
+position = Vector2(200, 200)
+script = ExtResource("1_ig7tw")
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=1834270625]
+custom_minimum_size = Vector2(20, 20)
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1, 1, 0.99215686, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1428216586]
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="Engine" type="AudioStreamPlayer2D" parent="Player" unique_id=609223785]
+stream = ExtResource("4_272bh")
+parameters/looping = true
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1992601678]
+position = Vector2(200, 200)
+script = ExtResource("2_h2yge")
+
+[node name="ColorRect" type="ColorRect" parent="Enemy" unique_id=254238462]
+custom_minimum_size = Vector2(20, 20)
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1, 0.38431373, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=641059581]
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="GameManager" type="Node" parent="." unique_id=851094206 node_paths=PackedStringArray("end_screen", "result_text")]
+script = ExtResource("3_1bvp3")
+end_screen = NodePath("../CanvasLayer2/EndScreen")
+result_text = NodePath("../CanvasLayer2/EndScreen/VBoxContainer/ResultText")
+
+[node name="GridIsLive" type="AudioStreamPlayer2D" parent="GameManager" unique_id=485795768]
+stream = ExtResource("6_7mycd")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1265156783]
+environment = SubResource("Environment_h2yge")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1494117489]
+
+[node name="CountdownLabel" type="Label" parent="CanvasLayer" unique_id=23190582]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "3"
+label_settings = SubResource("LabelSettings_1bvp3")
+
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=558846371]
+
+[node name="EndScreen" type="Control" parent="CanvasLayer2" unique_id=706452844]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Panel" type="Panel" parent="CanvasLayer2/EndScreen" unique_id=832139711]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 648.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer2/EndScreen" unique_id=1547375203]
+layout_mode = 0
+offset_left = 406.0
+offset_top = 261.0
+offset_right = 726.0
+offset_bottom = 364.0
+theme_override_constants/separation = 30
+alignment = 1
+
+[node name="ResultText" type="Label" parent="CanvasLayer2/EndScreen/VBoxContainer" unique_id=2070036044]
+layout_mode = 2
+theme_override_font_sizes/font_size = 30
+horizontal_alignment = 1
+
+[node name="HBoxContainer" type="HBoxContainer" parent="CanvasLayer2/EndScreen/VBoxContainer" unique_id=1844117361]
+layout_mode = 2
+theme_override_constants/separation = 20
+alignment = 1
+
+[node name="RestartButton" type="Button" parent="CanvasLayer2/EndScreen/VBoxContainer/HBoxContainer" unique_id=262536048]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+text = "Restart"
+
+[node name="MenuButton" type="Button" parent="CanvasLayer2/EndScreen/VBoxContainer/HBoxContainer" unique_id=1578678999]
+custom_minimum_size = Vector2(150, 50)
+layout_mode = 2
+text = "Main Menu"
+
+[connection signal="pressed" from="CanvasLayer2/EndScreen/VBoxContainer/HBoxContainer/RestartButton" to="GameManager" method="_on_restart_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/EndScreen/VBoxContainer/HBoxContainer/MenuButton" to="GameManager" method="_on_menu_button_pressed"]

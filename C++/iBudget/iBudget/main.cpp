@@ -62,6 +62,7 @@ public:
     }
 
     void loadFromFile() {
+        transactions.clear();
         ifstream file("budget.txt");
 
         string type, category;

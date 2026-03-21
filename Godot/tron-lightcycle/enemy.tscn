@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bs6povimfaocn"]
+
+[ext_resource type="Script" uid="uid://c68oodoo5fjhv" path="res://enemy.gd" id="1_7k104"]
+[ext_resource type="Script" uid="uid://c4nrcw15lubam" path="res://game_manager.gd" id="2_4gyqm"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
+
+[node name="Game" type="Node2D" unique_id=777031060]
+
+[node name="Player" type="CharacterBody2D" parent="." unique_id=2051018399]
+position = Vector2(200, 200)
+script = ExtResource("1_7k104")
+
+[node name="ColorRect" type="ColorRect" parent="Player" unique_id=1834270625]
+custom_minimum_size = Vector2(20, 20)
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=1428216586]
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="Enemy" type="CharacterBody2D" parent="." unique_id=1007430644]
+position = Vector2(200, 200)
+script = ExtResource("1_7k104")
+
+[node name="ColorRect" type="ColorRect" parent="Enemy" unique_id=963285623]
+custom_minimum_size = Vector2(20, 20)
+offset_left = -10.0
+offset_top = -10.0
+offset_right = 10.0
+offset_bottom = 10.0
+color = Color(1, 0.7058824, 0, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=733789269]
+shape = SubResource("RectangleShape2D_ig7tw")
+
+[node name="GameManager" type="Node" parent="." unique_id=812200163]
+script = ExtResource("2_4gyqm")
