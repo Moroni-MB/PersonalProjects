@@ -7,6 +7,7 @@ var game_started = false
 
 @onready var countdown_label = get_parent().get_node("CanvasLayer/CountdownLabel")
 @onready var grid_is_live = $GridIsLive
+@onready var game_music = $GameMusic
 
 
 func _ready():
@@ -16,25 +17,30 @@ func _ready():
 func start_countdown():
 	grid_is_live.play()
 	countdown_label.text = "3"
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(2).timeout
 
 	countdown_label.text = "2"
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(2).timeout
 
 	countdown_label.text = "1"
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(2).timeout
 
 	countdown_label.text = "GO!"
-	await get_tree().create_timer(1).timeout
+	await get_tree().create_timer(0.5).timeout
 
 	countdown_label.visible = false
 
 	game_started = true
+	game_music.play()
 
 func game_over():
+	if not game_started:
+		return
 	show_end_screen("YOU LOSE")
-		
+
 func win():
+	if not game_started:
+		return
 	show_end_screen("YOU WIN")
 
 func show_end_screen(text):

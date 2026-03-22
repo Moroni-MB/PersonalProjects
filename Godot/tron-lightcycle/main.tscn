@@ -5,8 +5,10 @@
 [ext_resource type="Script" uid="uid://c68oodoo5fjhv" path="res://enemy.gd" id="2_h2yge"]
 [ext_resource type="Texture2D" uid="uid://dcmngwhpu5gfk" path="res://TRON.png" id="2_lquwl"]
 [ext_resource type="Script" uid="uid://c4nrcw15lubam" path="res://game_manager.gd" id="3_1bvp3"]
-[ext_resource type="AudioStream" uid="uid://fi75h1vqxbae" path="res://sounds/engine.mp3" id="4_272bh"]
+[ext_resource type="AudioStream" uid="uid://cfrjbyumaqwpp" path="res://sounds/engine2.mp3" id="4_kek77"]
+[ext_resource type="AudioStream" uid="uid://bhcqpwcd3j7g3" path="res://sounds/turn2.mp3" id="5_kek77"]
 [ext_resource type="AudioStream" uid="uid://doko1mf26qh7b" path="res://sounds/battle.mp3" id="6_7mycd"]
+[ext_resource type="AudioStream" uid="uid://c6cntubvg5w6p" path="res://sounds/The Son of Flynn (From TRON_ LegacyScore).mp3" id="9_kek77"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ig7tw"]
 
@@ -66,8 +68,10 @@ metadata/_edit_use_anchors_ = true
 shape = SubResource("RectangleShape2D_ig7tw")
 
 [node name="Engine" type="AudioStreamPlayer2D" parent="Player" unique_id=609223785]
-stream = ExtResource("4_272bh")
-parameters/looping = true
+stream = ExtResource("4_kek77")
+
+[node name="Turn" type="AudioStreamPlayer2D" parent="Player" unique_id=2047470928]
+stream = ExtResource("5_kek77")
 
 [node name="Enemy" type="CharacterBody2D" parent="." unique_id=1992601678]
 position = Vector2(200, 200)
@@ -85,6 +89,9 @@ metadata/_edit_use_anchors_ = true
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Enemy" unique_id=641059581]
 shape = SubResource("RectangleShape2D_ig7tw")
 
+[node name="Turn" type="AudioStreamPlayer2D" parent="Enemy" unique_id=882295014]
+stream = ExtResource("5_kek77")
+
 [node name="GameManager" type="Node" parent="." unique_id=851094206 node_paths=PackedStringArray("end_screen", "result_text")]
 script = ExtResource("3_1bvp3")
 end_screen = NodePath("../CanvasLayer2/EndScreen")
@@ -92,6 +99,10 @@ result_text = NodePath("../CanvasLayer2/EndScreen/VBoxContainer/ResultText")
 
 [node name="GridIsLive" type="AudioStreamPlayer2D" parent="GameManager" unique_id=485795768]
 stream = ExtResource("6_7mycd")
+
+[node name="GameMusic" type="AudioStreamPlayer2D" parent="GameManager" unique_id=142995520]
+stream = ExtResource("9_kek77")
+parameters/looping = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1265156783]
 environment = SubResource("Environment_h2yge")

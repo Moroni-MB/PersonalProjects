@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c6cntubvg5w6p"
+path="res://.godot/imported/The Son of Flynn (From TRON_ LegacyScore).mp3-ff27938fbf82d6ca5237a3dc401091b5.mp3str"
+
+[deps]
+
+source_file="res://sounds/The Son of Flynn (From TRON_ LegacyScore).mp3"
+dest_files=["res://.godot/imported/The Son of Flynn (From TRON_ LegacyScore).mp3-ff27938fbf82d6ca5237a3dc401091b5.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

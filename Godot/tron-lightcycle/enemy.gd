@@ -12,6 +12,8 @@ var timer = 0.0
 var decision_timer = 0.0
 var decision_delay = 0.2  # tweak this
 
+@onready var turn = $Turn
+
 # Enemy cannot reverse direction
 var opposite_directions = {
 	Vector2.LEFT: Vector2.RIGHT,
@@ -29,6 +31,16 @@ var possible_directions = [
 
 func _ready():
 	game_manager = get_parent().get_node("GameManager")
+	randomize()  # seed RNG
+
+	var screen_size = get_viewport_rect().size
+	var grid_x = int(screen_size.x / tile_size)
+	var grid_y = int(screen_size.y / tile_size)
+
+	var rand_x = randi() % grid_x
+	var rand_y = randi() % grid_y
+
+	position = Vector2(rand_x * tile_size, rand_y * tile_size)
 
 
 func _process(delta):
@@ -44,7 +56,6 @@ func _process(delta):
 
 
 func move_enemy():
-	
 	# 🧠 Only rethink direction sometimes
 	if decision_timer >= decision_delay:
 		decision_timer = 0
@@ -53,14 +64,15 @@ func move_enemy():
 	var new_position = position + direction * tile_size
 	var screen_size = get_viewport_rect().size
 
-	# If we hit something → game over
+	# Enemy collision with walls → player wins
 	if new_position.x < 0 or new_position.x >= screen_size.x \
 	or new_position.y < 0 or new_position.y >= screen_size.y:
-		game_manager.game_over()
+		game_manager.win()
 		return
-
+		
+	# Enemy collision with trail → player wins
 	if game_manager.trail_positions.has(new_position):
-		game_manager.game_over()
+		game_manager.win()
 		return
 
 	# Leave trail
@@ -68,6 +80,8 @@ func move_enemy():
 
 	# Move enemy
 	position = new_position.snapped(Vector2(tile_size, tile_size))
+	
+	
 
 
 func change_direction():
@@ -97,7 +111,7 @@ func change_direction():
 
 		valid_directions.append(dir)
 
-	# Step 2: If trapped → game over
+	# Step 2: If trapped → player wins
 	if valid_directions.size() == 0:
 		game_manager.win()
 		return
@@ -148,6 +162,10 @@ func change_direction():
 		if score > best_score:
 			best_score = score
 			best_dir = dir
+
+	# 🎵 Play turn sound if direction changed
+	if best_dir != direction:
+		turn.play()
 
 	direction = best_dir
 

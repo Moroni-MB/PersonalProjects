@@ -7,7 +7,7 @@ var TrailScene = preload("res://trail.tscn")
 var timer = 0.0
 var game_manager
 
-@onready var engine_sound = $Engine
+@onready var turn = $Turn
 
 
 func _ready():
@@ -18,7 +18,6 @@ func _ready():
 	randomize()
 
 	var screen_size = get_viewport_rect().size
-
 	var grid_x = int(screen_size.x / tile_size)
 	var grid_y = int(screen_size.y / tile_size)
 
@@ -28,15 +27,9 @@ func _ready():
 	position = Vector2(rand_x * tile_size, rand_y * tile_size)
 
 
-
 func _process(delta):
 	if not game_manager.game_started:
-		if engine_sound.playing:
-			engine_sound.stop()
 		return
-		
-	if not engine_sound.playing:
-		engine_sound.play()
 		
 	timer += delta
 
@@ -47,26 +40,26 @@ func _process(delta):
 	handle_input()
 
 
-
 func handle_input():
+	var new_direction = direction  # remember the original
 
 	if Input.is_action_pressed("ui_right") and direction != Vector2.LEFT:
-		direction = Vector2.RIGHT
-
+		new_direction = Vector2.RIGHT
 	elif Input.is_action_pressed("ui_left") and direction != Vector2.RIGHT:
-		direction = Vector2.LEFT
-
+		new_direction = Vector2.LEFT
 	elif Input.is_action_pressed("ui_up") and direction != Vector2.DOWN:
-		direction = Vector2.UP
-
+		new_direction = Vector2.UP
 	elif Input.is_action_pressed("ui_down") and direction != Vector2.UP:
-		direction = Vector2.DOWN
+		new_direction = Vector2.DOWN
 
+	# Only play sound if direction actually changed
+	if new_direction != direction:
+		direction = new_direction
+		turn.play()
 
 
 func move_player():
 	var new_position = position + direction * tile_size
-	
 	var screen_size = get_viewport_rect().size
 
 	# Check arena walls
@@ -78,7 +71,7 @@ func move_player():
 		game_over()
 		return
 
-	# Check trail collision (shared system)
+	# Check trail collision
 	if game_manager.trail_positions.has(new_position):
 		game_over()
 		return
@@ -89,21 +82,12 @@ func move_player():
 	position = new_position
 
 
-
 func spawn_trail(pos):
-
 	var trail = TrailScene.instantiate()
 	trail.position = pos
-	
-	# Trail color
 	trail.modulate = Global.player_color
-
 	get_parent().add_child(trail)
-
-	# Register trail position in GameManager
 	game_manager.trail_positions[pos] = true
-
-
 
 
 func game_over():
