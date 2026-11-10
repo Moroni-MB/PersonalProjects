@@ -23,10 +23,10 @@ grow_vertical = 2
 
 [node name="VBoxContainer" type="VBoxContainer" parent="Control" unique_id=353756841]
 layout_mode = 0
-offset_left = 476.0
-offset_top = 205.0
-offset_right = 676.0
-offset_bottom = 408.0
+offset_left = 481.0
+offset_top = 157.0
+offset_right = 688.0
+offset_bottom = 469.0
 theme_override_constants/separation = 40
 alignment = 1
 
@@ -45,5 +45,16 @@ text = "Start Game"
 [node name="ColorSelectButton" type="OptionButton" parent="Control/VBoxContainer" unique_id=342661107]
 custom_minimum_size = Vector2(200, 50)
 layout_mode = 2
+
+[node name="DifficultySelector" type="OptionButton" parent="Control/VBoxContainer" unique_id=2099117663]
+custom_minimum_size = Vector2(200, 50)
+layout_mode = 2
+item_count = 3
+popup/item_0/text = "Easy"
+popup/item_0/id = 0
+popup/item_1/text = "Medium"
+popup/item_1/id = 1
+popup/item_2/text = "Hard"
+popup/item_2/id = 2
 
 [connection signal="pressed" from="Control/VBoxContainer/PlayButton" to="Control" method="_on_play_button_pressed"]
